@@ -54,7 +54,7 @@
             </div>
         </header>
         
-        <main class="main">
+        {{-- <main class="main">
             <!-- BEGIN: Hero Section -->
             <section id="hero" class="hero section dark-background">
                 <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
@@ -945,7 +945,13 @@
             </section>
             <!-- END: Contact Section -->
 
-        </main>
+        </main> --}}
+
+        <main class="main">
+
+            @yield('content')
+            
+        </main> 
 
         <footer id="footer" class="footer dark-background">
             <div class="container">
