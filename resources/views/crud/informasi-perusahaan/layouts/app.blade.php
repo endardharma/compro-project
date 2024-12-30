@@ -21,19 +21,19 @@
           <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
                 <main>
                     @yield('content')
+                    
                 </main>
             </div>
             
         </div>
         <!-- BEGIN: Script -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script> --}}
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
-        <script>
-            jQuery(document).ready(function() {
-                
-            });
-        </script>
+        @stack('create-data')
+        @stack('list-data')
+        @stack('update-data')
+        
         <!-- END: Script -->
     </body>
 </html>

@@ -21,5 +21,7 @@ Route::middleware(['auth:sanctum'])->group(function() {
 
     Route::prefix('informasi-perusahaan')->group(function() {
         Route::post("/add-data", [CompanyInformationController::class, 'addData']);
+        Route::post("/list-data", [CompanyInformationController::class, 'listData']);
+        Route::put("/update-data/{id}", [CompanyInformationController::class, 'updateData']);
     });
 });

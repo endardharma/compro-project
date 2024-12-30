@@ -42,3 +42,11 @@ themeToggleBtn.addEventListener('click', function() {
     document.dispatchEvent(event);
     
 });
+
+// Paksa mode gelap selalu aktif
+document.documentElement.classList.add('dark');
+localStorage.setItem('color-theme', 'dark');
+
+// Pastikan elemen-elemen terkait memiliki style mode gelap
+document.dispatchEvent(new Event('dark-mode'));
+

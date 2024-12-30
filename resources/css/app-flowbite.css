@@ -4019,6 +4019,69 @@ input:checked + .toggle-bg {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  /* DataTables dark mode styles */
+  table.dataTable.dark-mode thead {
+    background-color: #1f2937; /* Dark gray */
+    color: #ffffff; /* White text */
+  }
+
+  table.dataTable.dark-mode tbody {
+    background-color: #374151; /* Medium gray */
+    color: #e5e7eb; /* Light gray text */
+  }
+
+  table.dataTable.dark-mode tbody tr:hover {
+    background-color: #4b5563; /* Hover effect */
+  }
+
+  /* DataTables Dark Mode */
+  table.dataTable {
+    color: #f9f9f9;
+    background-color: #2d3748;
+  }
+
+  table.dataTable thead {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+
+  table.dataTable tbody tr {
+    background-color: #2d3748;
+    border-bottom: 1px solid #4a5568;
+  }
+
+  table.dataTable tbody tr:hover {
+    background-color: #4a5568;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #f9f9f9 !important;
+    background-color: #4a5568 !important;
+    border: 1px solid #2d3748 !important;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #e2e8f0 !important;
+    background-color: #2d3748 !important;
+  }
+
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_length label,
+  .dataTables_wrapper .dataTables_filter label {
+    color: #f9f9f9 !important;
+  }
+
+  .dataTables_wrapper .dataTables_length select,
+  .dataTables_wrapper .dataTables_filter input {
+    background-color: #4a5568 !important;
+    color: #f9f9f9 !important;
+    border: 1px solid #2d3748;
+  }
+
+  /* DataTables Default Mode (Light Mode) */
+
+
 }
 
 /*# sourceMappingURL=app.css.map*/

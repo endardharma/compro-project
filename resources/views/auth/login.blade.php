@@ -115,7 +115,7 @@
 
                                 // Redirect ke dashboard
                                 setTimeout(function () {
-                                    // window.location.href = "{{ route('dashboard') }}";
+                                    window.location.href = "{{ route('dashboard') }}";
                                 }, 1000); // Redirect setelah 1 detik
                             } else {
                                 alert('Login gagal: ' + result.message);

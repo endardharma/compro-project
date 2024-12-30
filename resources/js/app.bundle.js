@@ -159,4 +159,33 @@ eval("const sidebar = document.getElementById('sidebar');\r\n\r\nif (sidebar) {\
 /******/ 	
 /******/ })()
 ;
+
+// document.addEventListener('dark-mode', function () {
+//   const isDarkMode = document.documentElement.classList.contains('dark');
+//   toggleDataTablesDarkMode(isDarkMode);
+// });
+
+// function toggleDataTablesDarkMode(isDarkMode) {
+//   const dataTable = document.querySelector('#data-table'); // Ganti ID sesuai ID tabel Anda
+//   if (dataTable) {
+//       if (isDarkMode) {
+//           dataTable.classList.add('dark-mode');
+//       } else {
+//           dataTable.classList.remove('dark-mode');
+//       }
+//   }
+
+//   function toggleDataTablesDarkMode(isDarkMode) {
+//     const dataTableWrapper = document.querySelector('.dataTables_wrapper');
+//       if (dataTableWrapper) {
+//           if (isDarkMode) {
+//               dataTableWrapper.classList.add('dark-mode');
+//           } else {
+//               dataTableWrapper.classList.remove('dark-mode');
+//           }
+//       }
+//   }
+
+// }
+
 //# sourceMappingURL=app.bundle.js.map
