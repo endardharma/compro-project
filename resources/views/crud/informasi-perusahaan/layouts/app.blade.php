@@ -33,6 +33,7 @@
         @stack('create-data')
         @stack('list-data')
         @stack('update-data')
+        @stack('delete-data')
         
         <!-- END: Script -->
     </body>

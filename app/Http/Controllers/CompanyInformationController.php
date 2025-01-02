@@ -127,6 +127,24 @@ class CompanyInformationController extends Controller
                 'message' => 'Gagal melakukan update data informasi perusahaan',
             ], 400);
         }
+    }
 
+    public function deleteData($id)
+    {
+        $hapus = CompanyInformation::where('id', $id)->delete();
+        if ($hapus)
+        {
+            return response()->json([
+                'success' => true,
+                'message' => 'Hapus data informasi perusahaan berhasil',
+            ], 201);
+        }
+        else
+        {
+            return response()->json([
+                'success' => false,
+                'message' => 'Terjadi kesalahan saat menghapus data informasi perusahaan',
+            ], 400);
+        }
     }
 }
