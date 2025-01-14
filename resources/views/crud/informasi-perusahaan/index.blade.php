@@ -36,27 +36,39 @@
                         <input type="text" name="email" id="products-search" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Search for products">
                     </div>
                 </form>
-                <div class="flex items-center w-full sm:justify-end">
+                <div class="flex items-center">
                     <div class="flex pl-2 space-x-1">
                         <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                         <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                         <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
                         </a>
                         <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                            </svg>
                         </a>
                     </div>
+                    <button id="selectProduct" class="ml-4 text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800" type="button" data-drawer-placement="right">
+                        Pilih Checkbox
+                    </button>
                 </div>
             </div>
             <button id="createProductButton" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800" type="button" data-drawer-target="drawer-create-product-default" data-drawer-show="drawer-create-product-default" aria-controls="drawer-create-product-default" data-drawer-placement="right">
                 Tambah Data
             </button>
         </div>
+        
     </div>
 </div>
 <div class="flex flex-col">
@@ -72,6 +84,9 @@
                                     <label for="checkbox-all" class="sr-only">checkbox</label>
                                 </div>
                             </th> --}}
+                            <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
+                                Checkbox
+                            </th>
                             <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
                                 No
                             </th>
@@ -144,21 +159,39 @@
     </div>
 </div>
 
-<div id="data-table-pagination" class="sticky bottom-0 right-0 items-center w-full p-4 bg-white border-t border-gray-200 sm:flex sm:justify-between dark:bg-gray-800 dark:border-gray-700">
-    <div class="flex items-center mb-4 sm:mb-0">
-        <a href="#" id="prev-page" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-        </a>
-        <a href="#" id="next-page" class="inline-flex justify-center p-1 mr-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-        </a>
-        <span class="text-sm font-normal text-gray-500 dark:text-gray-400">Showing <span id="showing-info" class="font-semibold text-gray-900 dark:text-white"></span> of <span id="total-info" class="font-semibold text-gray-900 dark:text-white"></span></span>
+<div id="data-table-pagination" class="sticky bottom-0 right-0 w-full p-4 bg-white border-t border-gray-200 sm:flex sm:items-center sm:justify-between dark:bg-gray-800 dark:border-gray-700">
+    <!-- Pagination Info and Pilih Item -->
+    <div class="flex items-center justify-between w-full sm:w-auto">
+        <!-- Pagination Info -->
+        <div class="flex items-center">
+            <!-- Previous Page Button -->
+            <a href="#" id="prev-page" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <!-- Next Page Button -->
+            <a href="#" id="next-page" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <!-- Showing Info -->
+            <span class="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
+                Showing <span id="showing-info" class="font-semibold text-gray-900 dark:text-white"></span> of 
+                <span id="total-info" class="font-semibold text-gray-900 dark:text-white"></span>
+            </span>
+        </div>
     </div>
-    <div class="flex items-center space-x-3">
-        <a href="#" id="prev-btn" class="inline-flex items-center justify-center flex-1 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+
+    <!-- Navigation Buttons -->
+    <div class="flex items-center mt-4 space-x-3 sm:mt-0">
+        <!-- Previous Button -->
+        <a href="#" id="prev-btn" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             Previous
         </a>
-        <a href="#" id="next-btn" class="inline-flex items-center justify-center flex-1 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+        <!-- Next Button -->
+        <a href="#" id="next-btn" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             Next
         </a>
     </div>
@@ -213,6 +246,42 @@
 </div>
 <!-- END: Update Data -->
 
+<!-- BEGIN: Notification success update data-->
+<div id="success-update-data-notification-content" class="flex items-center hidden p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+    <svg class="flex-shrink-0 w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <div class="ml-2 text-sm font-medium flex-grow">
+        Data Berhasil di Ubah.
+        <div class="text-slate-500 mt-1 update-data-pesan-sukses"></div>
+    </div>
+    <button type="button" class="ml-2 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" aria-label="Close">
+        <span class="sr-only">Dismiss</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+<!-- END: Notification success update data-->
+
+<!-- BEGIN: Notification failed update data-->
+<div id="failed-update-data-notification-content" class="flex items-center hidden p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+    <svg class="flex-shrink-0 w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <div class="ml-2 text-sm font-medium">
+        Data Gagal di Ubah.
+        <div class="text-slate-500 mt-1 update-data-pesan-gagal"></div>
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-border-3" aria-label="Close">
+        <span class="sr-only">Dismiss</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+<!-- END: Notification failed update data-->
+
 <!-- BEGIN: Delete Data -->
 <div id="drawer-delete-product-default" class="fixed top-0 right-0 z-40 w-full h-screen max-w-xs p-4 overflow-y-auto transition-transform translate-x-full bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label" aria-hidden="true">
     <h5 id="drawer-label" class="inline-flex items-center text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Delete item</h5>
@@ -231,6 +300,42 @@
 </div>
 <!-- END: Delete Data -->
 
+<!-- BEGIN: Notification success delete data-->
+<div id="success-delete-data-notification-content" class="flex items-center hidden p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+    <svg class="flex-shrink-0 w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <div class="ml-2 text-sm font-medium">
+        Data Berhasil di Hapus.
+        <div class="text-slate-500 mt-1 delete-data-pesan-sukses"></div> <!-- Elemen pesan sukses dipindahkan ke sini -->
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-border-3" aria-label="Close">
+        <span class="sr-only">Dismiss</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+<!-- END: Notification success delete data-->
+
+<!-- BEGIN: Notification failed delete data-->
+<div id="failed-delete-data-notification-content" class="flex items-center hidden p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+    <svg class="flex-shrink-0 w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <div class="ml-2 text-sm font-medium">
+        Data Gagal di Hapus.
+        <div class="text-slate-500 mt-1 delete-data-pesan-gagal"></div>
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-border-3" aria-label="Close">
+        <span class="sr-only">Dismiss</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+<!-- END: Notification failed delete data-->
+
 
 <!-- BEGIN: Add Data -->
 <div id="drawer-create-product-default" class="fixed top-0 right-0 z-40 w-full h-screen max-w-xs p-4 overflow-y-auto transition-transform translate-x-full bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label" aria-hidden="true">
@@ -241,6 +346,10 @@
     </button>
     <form action="#">
         <div class="space-y-4">
+            {{-- <div>
+                <label for="select" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select</label>
+                <input type="text" id="select" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama_perusahaan" placeholder="Masukkan Nama Perusahaan" required>
+            </div> --}}
             <div>
                 <label for="nama_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Perusahaan</label>
                 <input type="text" id="nama_perusahaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama_perusahaan" placeholder="Masukkan Nama Perusahaan" required>
@@ -279,9 +388,47 @@
 {{-- @yield('create') --}}
 <!-- END: Add Data -->
 
+<!-- BEGIN: Notification success add data-->
+<div id="success-add-data-notification-content" class="flex items-center hidden p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+    <svg class="flex-shrink-0 w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <div class="ml-2 text-sm font-medium">
+        Data Berhasil di Tambahkan.
+        <div class="text-slate-500 mt-1 add-data-pesan-sukses"></div> <!-- Elemen pesan sukses dipindahkan ke sini -->
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-border-3" aria-label="Close">
+        <span class="sr-only">Dismiss</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+<!-- END: Notification success add data-->
+
+<!-- BEGIN: Notification failed add data-->
+<div id="failed-add-data-notification-content" class="flex items-center hidden p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+    <svg class="flex-shrink-0 w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <div class="ml-2 text-sm font-medium">
+        Data Gagal di Tambahkan.
+        <div class="text-slate-500 mt-1 add-data-pesan-gagal"></div>
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-border-3" aria-label="Close">
+        <span class="sr-only">Dismiss</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+<!-- END: Notification failed add data-->
+
 @endsection
 
 @push('create-data')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
 <script>
     jQuery(document).ready(function() {
 
@@ -293,7 +440,7 @@
 
             for (var i = 0; i < cookieArray.length; i++)
             {
-                var cookie= cookie = cookieArray[i];
+                var cookie = cookieArray[i];
                 while (cookie.charAt(0) === ' ')
                 {
                     cookie = cookie.substring(1);   
@@ -348,16 +495,50 @@
                 processData: false,
                 contentType: false,
                 success: function(response) {
-                    alert('Data Berhasil di Tambahkan: ' + response.message);
-                    console.log('data berhasil di tambahkan');
-                    
+                    // show the modal
+                    jQuery('.add-data-pesan-sukses').text(response.message);
+                    Toastify({
+                        node: $('#success-add-data-notification-content')
+                            .clone()
+                            .removeClass("hidden")[0],
+                        duration: 3000,
+                        newWindow: true,
+                        gravity: "top",
+                        position: "right",
+                        stopOnFocus: true,
+                        onClick: function() {
+                            Toastify({
+                                node: $("#success-add-data-notification-content").hide()
+                            }).hideToast();
+                        }
+                    }).showToast();
+
                     setTimeout(function() {
                         location.reload();
                     }, 3000);
                 },
                 error: function(xhr, status, error) {
-                    console.log('error', error);
+                    // show the modal
+                    jQuery('.add-data-pesan-gagal').text(response.message);
+                    Toastify({
+                        node: $('#failed-add-data-notification-content')
+                            .clone()
+                            .removeClass("hidden")[0],
+                        duration: 3000,
+                        newWindow: true,
+                        gravity: "top",
+                        position: "right",
+                        stopOnFocus: true,
+                        onClick: function() {
+                            Toastify({
+                                node: $("#failed-add-data-notification-content").hide()
+                            }).hideToast();
+                        }
+                    }).showToast();
 
+                    setTimeout(function() {
+                        location.reload();
+                    }, 5000);
                 }
             });
         });
@@ -417,6 +598,46 @@
             }
         }
 
+        function getSelectedCheckboxIds()
+        {
+            var selectedIds = [];
+            $('.row-checkbox:checked').each(function() {
+                selectedIds.push($(this).val());
+            });
+            return selectedIds;
+        }
+
+        $(document).on('change', '.row-checkbox', function() {
+            $('.row-checkbox').not(this).prop('checked', false);
+        });
+
+        $('#selectProduct').on('click', function() { 
+            // var selectedCheckbox = $('.row-checkbox:checked').val(); 
+            var selectedCheckboxIds = getSelectedCheckboxIds();
+            if (selectedCheckboxIds.length > 0) { 
+                jQuery.ajax({
+                    url: 'http://127.0.0.1:8000/api/informasi-perusahaan/update-selection',
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer ' + token,
+                        'Content-Type': 'application/json',
+                    },
+                    data: JSON.stringify({
+                        id: selectedCheckboxIds[0] // hanya satu yang dipilih
+                    }),
+                    success: function(response) {
+                        alert('Data berhasil dipilih dan disimpan');
+                        location.reload();
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error: ', error);
+                    }
+                });
+            } else { alert('Silakan pilih satu item.'); 
+
+            } 
+        });
+
         // jQuery('#data-table').DataTable({
         var table = $('#data-table').DataTable({
             "processing": true,
@@ -430,6 +651,14 @@
                 }
             },
             "columns": [
+                {
+                    data: null,
+                    className: 'text-center',
+                    render: function(data, type, row) {
+                        return '<input type="checkbox" class="row-checkbox" value="' + row.no + '">';
+                    },
+                    orderable: false
+                },
                 { data: 'no', className: 'text-center' },
                 { data: 'nama', className: 'text-center' },
                 { data: 'visi', className: 'text-center' },
@@ -453,41 +682,62 @@
 
             searching: false,
             paging: false,
-            "paging": true,
-            "pageLength": 20,  // Menentukan jumlah item per halaman
-            "dom": 'lrtip',  // Menggunakan default tanpa pagination control
-            "drawCallback": function(settings) {
+            paging: true,
+            pageLength: 20,  // Menentukan jumlah item per halaman
+            dom: 'lrtip',  // Menggunakan default tanpa pagination control
+            drawCallback: function(settings) {
                 var info = table.page.info();
 
-                var currentPage = info.page; // halaman saat ini
-                var totalPages = info.pages; // jumlah total halaman
-
-                // Menampilkan informasi tentang jumlah entri
-                // $('#showing-info').text(info.start + 1 + '-' + info.end);
-                // $('#total-info').text(info.recordsTotal);
-
-                // Mengaktifkan/menonaktifkan tombol Previous dan Next berdasarkan halaman saat ini
-                // if (info.page() === 0) {
-                //     $('#prev-btn').prop('disabled', true);
-                // } else {
-                //     $('#prev-btn').prop('disabled', false);
-                // }
-
-                // if (info.page() === info.pages - 1) {
-                //     $('#next-btn').prop('disabled', true);
-                // } else {
-                //     $('#next-btn').prop('disabled', false);
-                // }
+                // var currentPage = info.page; // halaman saat ini
+                // var totalPages = info.pages; // jumlah total halaman
 
                 $('#showing-info').text(info.start + 1 + '-' + info.end);
                 $('#total-info').text(info.recordsTotal);
 
                 // menonaktifkan previous dan next jika sudah mencapai halaman pertama atau terakhir
-                $('#prev-btn').prop('disabled', currentPage === 0);
-                $('#next-btn').prop('disabled', currentPage === totalPages - 1);
+                $('#prev-btn').prop('disabled', info.page === 0);
+                $('#next-btn').prop('disabled', info.page === info.pages - 1);
 
             }
         });
+
+        // $(document).on('change', '.row-checkbox', function() { 
+        //     $('.row-checkbox').not(this).prop('checked', false); 
+        // }); 
+
+        // function showSelectedData(id) {
+        //     console.log('ID yang dipilih: ', id);
+        //     jQuery.ajax({
+        //         url: 'http://127.0.0.1:8000/api/informasi-perusahaan/get-selected-data',
+        //         method: 'POST',
+        //         headers: {
+        //             'Authorization': 'Bearer ' + token,
+        //         },
+        //         data: JSON.stringify ({
+        //             ids: [id]
+        //         }),
+        //         contentType: "application/json",
+        //         success: function(response) {
+        //             console.log('Response: ', response);
+        //             if (response.length > 0)
+        //             {
+        //                 var data = response[0]; // asumsi hanya satu perusahaan yang di pilih
+        //                 $('#nama_perusahaan').text(data.nama_perusahaan);    
+        //                 $('#visi_nama_perusahaan').text(data.nama_perusahaan);    
+        //                 $('#misi_nama_perusahaan').text(data.nama_perusahaan);    
+        //                 $('#deskripsi').text(data.deskripsi);
+        //                 alert('Data berhasil ditampilkan di landing-page.');
+        //             }
+        //             else
+        //             {
+        //                 console.log('Data tidak ada');
+        //             }
+        //         },
+        //         error: function(xhr, status, error) {
+        //             console.error('Error: ', error);
+        //         }
+        //     });
+        // }
 
         // Tombol Previous
         $('#prev-btn').click(function() {
@@ -584,16 +834,52 @@
                     deskripsi: deskripsi
                 },
                 success: function(response) {
-                    alert('Data Berhasil di Update: ' + response.message);
-                    console.log('data berhasil di update');
+                    // Show the modal
+                    jQuery('.update-data-pesan-sukses').text(response.message);
+                    Toastify({
+                        node: $("#success-update-data-notification-content")
+                            .clone()
+                            .removeClass("hidden")[0],
+                        duration: 3000,
+                        newWindow: true,
+                        close: false,
+                        gravity: "top",
+                        position: "right",
+                        stopOnFocus: true,
+                        onClick: function() {
+                            Toastify({
+                                node: $("#success-update-data-notification-content").hide()
+                            }).hideToast();
+                        }
+                    }).showToast();
                     
                     setTimeout(function() {
                         location.reload();
                     }, 3000);
                 },
                 error: function(xhr, status, error) {
-                    console.log('error', error);
-
+                    // Show the modal
+                    jQuery('.update-data-pesan-gagal').text(response.message);
+                    Toastify({
+                        node: $("#failed-update-data-notification-content")
+                            .clone()
+                            .removeClass("hidden")[0],
+                        duration: 3000,
+                        newWindow: true,
+                        close: true,
+                        gravity: "top",
+                        position: "right",
+                        stopOnFocus: true,
+                        onClick: function() {
+                            Toastify({
+                                node: $("#failed-update-data-notification-content").hide()
+                            }).hideToast();
+                        }
+                    }).showToast();
+                    
+                    setTimeout(function() {
+                        location.reload();
+                    }, 5000);
                 }
             })
         });
@@ -645,16 +931,52 @@
                         'Authorization': 'Bearer ' + token,
                     },
                     success: function(response) {
-                        alert('Data Berhasil di Hapus: ' + response.message);
-                        console.log('data berhasil di hapus');
+                        // show the modal
+                        jQuery('.delete-data-pesan-sukses').text(response.message);
+                        Toastify({
+                            node: $("#success-delete-data-notification-content")
+                                .clone()
+                                .removeClass("hidden")[0],
+                            duration: 3000,
+                            newWindow: true,
+                            close: false,
+                            gravity: "top",
+                            position: "right",
+                            stopOnFocus: true,
+                            onClick: function() {
+                                Toastify({
+                                    node: $("#success-delete-data-notification-content").hide()
+                                }).hideToast();
+                            }
+                        }).showToast();
 
                         setTimeout(function() {
                             location.reload();
                         }, 3000);
                     },
                     error: function(xhr, status, error) {
-                        alert('Terjadi kesalahan dalam menghapus').text(error);
-                        console.log('error: ', error);
+                        // Show the modal
+                        jQuery('.delete-data-pesan-gagal').text(response.message);
+                        Toastify({
+                            node: $("#failed-delete-data-notification-content")
+                                .clone()
+                                .removeClass("hidden")[0],
+                            duration: 3000,
+                            newWindow: true,
+                            close: true,
+                            gravity: "top",
+                            position: "right",
+                            stopOnFocus: true,
+                            onClick: function() {
+                                Toastify({
+                                    node: $("#failed-delete-data-notification-content").hide()
+                                }).hideToast();
+                            }
+                        }).showToast();
+                        
+                        setTimeout(function() {
+                            location.reload();
+                        }, 5000);
                     }
                     
                 });
@@ -663,3 +985,36 @@
     });
 </script>
 @endpush
+
+{{-- @push('get-selected-data')
+<script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        // get cookie
+        function getCookie(name){
+            var cookieName = name + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++)
+            {
+                var cookie = cookieArray[i];
+                while (cookie.charAt(0) === ' ')   
+                {
+                    cookie = cookie.substring(1);   
+                }
+
+                if (cookie.indexOf(cookieName) === 0)
+                {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+        }
+
+        var token = getCookie('token');
+        // console.log('Token Get Selected Data: ', token);
+
+        
+    });
+</script>
+@endpush --}}

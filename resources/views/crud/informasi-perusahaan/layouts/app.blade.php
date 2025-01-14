@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Informasi Perusahaan</title>
         @vite(['resources/css/app-flowbite.css','resources/js/app.bundle.js', 'resources/js/dark-mode.js'])
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     </head>
     <body>
         <!-- BEGIN: Header -->
@@ -34,6 +36,7 @@
         @stack('list-data')
         @stack('update-data')
         @stack('delete-data')
+        @stack('get-selected-data')
         
         <!-- END: Script -->
     </body>

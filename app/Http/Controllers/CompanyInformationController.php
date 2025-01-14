@@ -117,7 +117,7 @@ class CompanyInformationController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Berhasil meng-update data informasi perusahaan',
+                'message' => 'Data informasi perusahaan berhasil di ubah ke dalam database',
             ], 201);
         }
         else
@@ -136,7 +136,7 @@ class CompanyInformationController extends Controller
         {
             return response()->json([
                 'success' => true,
-                'message' => 'Hapus data informasi perusahaan berhasil',
+                'message' => 'Data informasi perusahaan berhasil di hapus dari database',
             ], 201);
         }
         else
@@ -146,5 +146,27 @@ class CompanyInformationController extends Controller
                 'message' => 'Terjadi kesalahan saat menghapus data informasi perusahaan',
             ], 400);
         }
+    }
+
+    public function updateSelection(Request $request)
+    {
+        $id = $request->input('id');
+        
+        // set all is_selected to false
+        CompanyInformation::query()->update(['is_selected' => false ]);
+
+        // update selected companywith is_selected = true
+        CompanyInformation::where('id', $id)->update(['is_selected' => true]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Data berhasil di update',
+        ], 201);
+    }
+
+    public function getSelectedData(Request $request)
+    {
+        $selectedData = CompanyInformation::where('is_selected', true)->first();
+        return response()->json($selectedData);
     }
 }

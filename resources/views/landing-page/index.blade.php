@@ -8,8 +8,8 @@
         <!-- slide 1 -->
         <div class="carousel-item active">
             <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Ambara Journey</span></h2>
-                <p class="animate__animated animate__fadeInUp">Sebuah perusahaan freelance di bidang jasa dengan fokus pengambilan dan pengeditan foto maupun video. Bekerja dengan profesionalitas tinggi yang di dukung oleh kerjasama antar tim. Kami dapat membantu anda untuk pengambilan moment foto maupun video yang di ambil secara langsung di tempat.</p>
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span id="nama_perusahaan"></span></h2>
+                <p class="animate__animated animate__fadeInUp" id="deskripsi"></p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
         </div>
@@ -17,8 +17,8 @@
         <!-- slide 2 -->
         <div class="carousel-item">
             <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Visi <span>Ambara Journey</span></h2>
-                <p class="animate__animated animate__fadeInUp">Menjadi perusahaan fotografi dan videografi terpercaya yang mengembara ke berbagai penjuru, mengabadikan setiap momen berharga dengan kualitas tinggi, kepuasan pelanggan, dan ketepatan waktu sebagai prioritas</p>
+                <h2 class="animate__animated animate__fadeInDown">Visi <span id="visi_nama_perusahaan"></span></h2>
+                <p class="animate__animated animate__fadeInUp" id="visi"></p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
         </div>
@@ -26,8 +26,8 @@
         <!-- slide 2 -->
         <div class="carousel-item">
             <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Misi <span>Ambara Journey</span></h2>
-                <p class="animate__animated animate__fadeInUp">Ambara Journey berkomitmen untuk menghadirkan layanan fotografi dan videografi yang fleksibel, menjangkau berbagai lokasi sesuai keinginan klien, dan mengutamakan ketepatan waktu dalam setiap tahap pengerjaan. Dengan fokus pada kualitas visual yang memuaskan dan pengalaman yang berkesan, kami terus berinovasi dalam menangkap momen terbaik, mencerminkan keunikan setiap cerita yang diabadikan.</p>
+                <h2 class="animate__animated animate__fadeInDown">Misi <span id="misi_nama_perusahaan"></span></h2>
+                <p class="animate__animated animate__fadeInUp" id="misi"></p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
         </div>
@@ -890,5 +890,167 @@
         
 </section>
 <!-- END: Contact Section -->
+@endsection
 
-@endsetion
+@push('get-info-perusahaan')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        // get cookie
+        function getCookie(name) {
+            var cookieName = name + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++)
+            {
+                var cookie = cookieArray[i];
+                while (cookie.charAt(0) ===  ' ')
+                {
+                    cookie = cookie.substring(1);
+                }
+
+                if (cookie.indexOf(cookieName) === 0)
+                {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+        }
+
+        var token = getCookie('token');
+        console.log('Token Get Info: ', token);
+
+        // var selectedCheckboxIds = JSON.parse(sessionStorage.getItem('selectedCheckboxIds')); // ambil dari session storage
+        // console.log('Selected IDs setelah pengambilan: ', selectedCheckboxIds);
+        
+        // if (selectedCheckboxIds && selectedCheckboxIds.length > 0)
+        // {
+        //     showSelectedData(selectedCheckboxIds);
+        // }
+        // else
+        // {
+        //     console.log('Tidak ada data yang dipilih.');
+        // }
+
+        jQuery.ajax({
+            url: 'http://127.0.0.1:8000/api/informasi-perusahaan/get-selected-data',
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token
+            },
+            success: function(response) {
+                if (response) {
+                    $('#nama_perusahaan').text(response.nama_perusahaan);
+                    $('#visi_nama_perusahaan').text(response.nama_perusahaan);
+                    $('#misi_nama_perusahaan').text(response.nama_perusahaan);
+                    $('#deskripsi').text(response.deskripsi);
+                    $('#visi').text(response.visi);
+                    $('#misi').text(response.misi);
+                } else {
+                    console.log('Data tidak ada');
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error: ', error);
+            }
+        });
+        
+        // var selectedCheckboxIds = JSON.parse(sessionStorage.getItem('selectedCheckboxIds')); // ambil dari session storage
+        // if (selectedCheckboxIds && selectedCheckboxIds.length > 0)
+        // {
+        //     jQuery.ajax({
+        //         url: 'http://127.0.0.1:8000/api/informasi-perusahaan/get-selected-data',
+        //         method: 'POST',
+        //         headers: {
+        //             'Authorization': 'Bearer ' + token
+        //         },
+        //         data: JSON.stringify({
+        //             ids: selectedCheckboxIds // pastikan anda memiliki variable ini dari checkbox yang di pilih
+        //         }),
+        //         contentType: "application/json",
+        //         success: function(response) {
+        //             console.log('Response dari server: ', response);
+                
+        //         // if (response && response.nama_perusahaan && response.deskripsi && response.visi && response.misi) {
+        //         //     $('#nama_perusahaan').text(response.nama_perusahaan);
+        //         //     $('#visi_nama_perusahaan').text(response.nama_perusahaan);
+        //         //     $('#misi_nama_perusahaan').text(response.nama_perusahaan);
+        //         //     $('#deskripsi').text(response.deskripsi);
+        //         //     $('#visi').text(response.visi);
+        //         //     $('#misi').text(response.misi);
+        //         // } else {
+        //         //     console.log('Data tidak ada');
+        //         // }
+        //         // },
+        //         // error: function(xhr, status, error) {
+        //         //     console.error('Error: ', error);
+        //         // }
+    
+        //             if (response && response.length > 0)
+        //             {
+        //                 var company = response[0]; //asumsi hanya satu perusahaan yang di pilih
+        //                 $('#nama_perusahaan').text(company.nama_perusahaan);
+        //                 $('#visi_nama_perusahaan').text(company.nama_perusahaan);
+        //                 $('#misi_nama_perusahaan').text(company.nama_perusahaan);
+        //                 $('#deskripsi').text(company.deskripsi);
+        //                 $('#visi').text(company.visi);
+        //                 $('#misi').text(company.misi);
+        //                 // alert('Data berhasil di tampilkan di landing-page informasi-perusahaan');
+        //             }
+        //             else
+        //             {
+        //                 console.log('Data tidak ada');
+        //             }
+                    
+        //         },
+        //         error: function(xhr, status, error) {
+        //             console.error('Error: ', error);
+        //         }
+        //     });
+        // }
+    });
+    
+    // function showSelectedData(ids)
+    // {
+    //     console.log('ID yang dipilih: ', ids); // verifikasi pengiriman id setelah disini
+    //     jQuery.ajax({
+    //         url: 'http://127.0.0.1:8000/api/informasi-perusahaan/get-selected-data',
+    //         method: 'POST',
+    //         headers: {
+    //             'Authorization': 'Beaerer ' + token,
+    //         },
+    //         data: JSON.stringify({
+    //             ids: ids,
+    //         }),
+    //         contetnType: "application/json",
+    //         success: function(response){
+    //             console.log('Response Data: ', response);
+    //             if (response.lentgh > 0)
+    //             {
+    //                 var company = response[0]; // asumsi hanya satu perusahaan yang dipilih
+    //                 $('#nama_perusahaan').text(company.nama_perusahaan);
+    //                 $('#visi_nama_perusahaan').text(company.nama_perusahaan);
+    //                 $('#misi_nama_perusahaan').text(company.nama_perusahaan);
+    //                 $('#deskripsi').text(company.deskripsi);
+    //                 $('#visi').text(company.visi);
+    //                 $('#misi').text(company.misi);
+    //                 alert('Data berhasil di tampilkan di landing-page informasi-perusahaan');
+    //             }
+    //             else
+    //             {
+    //                 console.log('Data tidak ada');
+    //             }
+    //         },
+    //         error: function(xhr, status, error) {
+    //             console.error('Error: ', error);
+    //         }
+    //     });
+    // }
+</script>
+@endpush
+
+{{-- @push('get-selected-data')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+@endpush --}}

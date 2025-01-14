@@ -25,5 +25,8 @@ Route::middleware(['auth:sanctum'])->group(function() {
         Route::post("/list-data", [CompanyInformationController::class, 'listData']);
         Route::put("/update-data/{id}", [CompanyInformationController::class, 'updateData']);
         Route::delete("/delete-data/{id}", [CompanyInformationController::class, 'deleteData']);
+
+        Route::post("/update-selection", [CompanyInformationController::class, 'updateSelection']);
+        Route::get("/get-selected-data", [CompanyInformationController::class, 'getSelectedData']);
     });
 });
