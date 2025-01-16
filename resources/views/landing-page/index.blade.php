@@ -61,7 +61,7 @@
 <!-- END: Hero Section -->
 
 <!-- BEGIN: About Section -->
-<section id="about" class="about section">
+<section id="about-company" class="about section">
     <!-- BEGIN: Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
@@ -72,10 +72,10 @@
     <div class="container">
         <div class="row gy-4">
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                <p>
+                <p id="deskripsi">
                     Ambara Journey merupakan sebuah jasa yang bergerak dalam bidan kreatif. Kami disini menyediakan pelayanan pengambilan foto maupun video. Untuk saat ini, kami melakukan pengambilan foto maupun video untuk:
                 </p>
-                <ul>
+                <ul id="list">
                     <li><i class="bi bi-check2-circle"></i><span>Graduation</span></li>
                     <li><i class="bi bi-check2-circle"></i><span>Prewedding</span></li>
                     <li><i class="bi bi-check2-circle"></i><span>Engagement</span></li>
@@ -84,7 +84,7 @@
                 </ul>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <p>Segala sesuatu yang kami kerjakan bersifat profesional, sehingga kami bekerja untuk memenuhi keinginan klien kami dan memenuhi ekspetasi klien kami dengan hasil pengambilan maupun editing foto dan video.</p>
+                <p id="akhir-deskripsi">Segala sesuatu yang kami kerjakan bersifat profesional, sehingga kami bekerja untuk memenuhi keinginan klien kami dan memenuhi ekspetasi klien kami dengan hasil pengambilan maupun editing foto dan video.</p>
                 <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
         </div>

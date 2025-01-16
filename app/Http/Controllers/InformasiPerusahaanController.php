@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CompanyInformation;
+use App\Models\InformasiPerusahaan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
-class CompanyInformationController extends Controller
+class InformasiPerusahaanController extends Controller
 {
     public function index()
     {
@@ -22,6 +22,9 @@ class CompanyInformationController extends Controller
             'misi' => 'required',
             'alamat' => 'required',
             'telephone' => 'required',
+            'email' => 'required|string|email|max:255|unique:informasi_perusahaan',
+            'profile_perusahaan' => 'required',
+            'profile_singkat' => 'required',
             'deskripsi' => 'required',
         ]);
 
@@ -30,12 +33,15 @@ class CompanyInformationController extends Controller
             return response()->json($validator->errors(), 400);
         }
 
-        $info = new CompanyInformation();
+        $info = new InformasiPerusahaan();
         $info->nama_perusahaan = $request->nama;
         $info->visi = $request->visi;
         $info->misi = $request->misi;
         $info->alamat = $request->alamat;
         $info->telephone = $request->telephone;
+        $info->email = $request->email;
+        $info->profile_perusahaan = $request->profile_perusahaan;
+        $info->profile_singkat = $request->profile_singkat;
         $info->deskripsi = $request->deskripsi;
         $info->save();
 
@@ -54,7 +60,10 @@ class CompanyInformationController extends Controller
             3 => 'misi',
             4 => 'alamat',
             5 => 'telephone',
-            6 => 'deskripsi',
+            6 => 'email',
+            7 => 'profile_perusahaan',
+            8 => 'profile_singkat',
+            9 => 'deskripsi',
         ];
 
         $start = $request->start;
@@ -64,9 +73,9 @@ class CompanyInformationController extends Controller
         $search = $request->input('search')['value'];
 
         // hitung keseluruhan
-        $hitung = CompanyInformation::count();
+        $hitung = InformasiPerusahaan::count();
 
-        $info = CompanyInformation::where(function ($q) use ($search) { 
+        $info = InformasiPerusahaan::where(function ($q) use ($search) { 
             if ($search != null)
             {
                 return $q->where('nama_perusahaan', 'LIKE', '%'.$search.'%')->orWhere('id', 'LIKE', '%'.$search.'%');
@@ -81,11 +90,14 @@ class CompanyInformationController extends Controller
         foreach($info as $f)
         {
             $item['no'] = $f->id;
-            $item['nama'] = $f->nama_perusahaan;
+            $item['nama_perusahaan'] = $f->nama_perusahaan;
             $item['visi'] = $f->visi;
             $item['misi'] = $f->misi;
             $item['alamat'] = $f->alamat;
             $item['telephone'] = $f->telephone;
+            $item['email'] = $f->email;
+            $item['profile_perusahaan'] = $f->profile_perusahaan;
+            $item['profile_singkat'] = $f->profile_singkat;
             $item['deskripsi'] = $f->deskripsi;
             $data[] = $item;
         }
@@ -100,7 +112,7 @@ class CompanyInformationController extends Controller
 
     public function updateData(Request $request, $id)
     {
-        $find = CompanyInformation::where('id', $id)->first();
+        $find = InformasiPerusahaan::where('id', $id)->first();
         // dd($find);
 
         if ($find)
@@ -109,6 +121,9 @@ class CompanyInformationController extends Controller
             $request->visi != null ? $find->visi = $request->visi : true;
             $request->misi != null ? $find->misi = $request->misi : true;
             $request->alamat != null ? $find->alamat = $request->alamat : true;
+            $request-> telephone != null ? $find->telephone = $request->telephone : true;
+            $request-> email != null ? $find->email = $request->email : true;
+            $request-> profile_perusahaan != null ? $find->profile_perusahaan = $request->profile_perusahaan : true;
             $request-> telephone != null ? $find->telephone = $request->telephone : true;
             $request->deskripsi != null ? $find->deskripsi = $request->deskripsi : true;
 
@@ -131,7 +146,7 @@ class CompanyInformationController extends Controller
 
     public function deleteData($id)
     {
-        $hapus = CompanyInformation::where('id', $id)->delete();
+        $hapus = InformasiPerusahaan::where('id', $id)->delete();
         if ($hapus)
         {
             return response()->json([
@@ -153,10 +168,10 @@ class CompanyInformationController extends Controller
         $id = $request->input('id');
         
         // set all is_selected to false
-        CompanyInformation::query()->update(['is_selected' => false ]);
+        InformasiPerusahaan::query()->update(['is_selected' => false ]);
 
         // update selected companywith is_selected = true
-        CompanyInformation::where('id', $id)->update(['is_selected' => true]);
+        InformasiPerusahaan::where('id', $id)->update(['is_selected' => true]);
 
         return response()->json([
             'success' => true,
@@ -166,7 +181,7 @@ class CompanyInformationController extends Controller
 
     public function getSelectedData(Request $request)
     {
-        $selectedData = CompanyInformation::where('is_selected', true)->first();
+        $selectedData = InformasiPerusahaan::where('is_selected', true)->first();
         return response()->json($selectedData);
     }
 }

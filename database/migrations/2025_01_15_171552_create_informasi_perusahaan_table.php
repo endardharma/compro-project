@@ -11,14 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('company_information', function (Blueprint $table) {
+        Schema::create('informasi_perusahaan', function (Blueprint $table) {
             $table->id();
             $table->string('nama_perusahaan');
             $table->string('visi');
             $table->string('misi');
             $table->string('alamat');
             $table->bigInteger('telephone');
+            $table->string('email')->unique();
+            $table->string('profile_perusahaan');
+            $table->string('profile_singkat');
             $table->string('deskripsi');
+            $table->boolean('is_selected')->default(false);
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('company_information');
+        Schema::dropIfExists('informasi_perusahaan');
     }
 };

@@ -12,13 +12,13 @@
                       Informasi Perusahaan
                     </a>
                   </li>
-                  {{-- <li>
+                  <li>
                     <div class="flex items-center">
                       <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                       <a href="#" class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">Pengelolaan Informasi Perusahaan</a>
                     </div>
                   </li>
-                  <li>
+                  {{-- <li>
                     <div class="flex items-center">
                       <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                       <span class="ml-1 text-gray-400 md:ml-2 dark:text-gray-500" aria-current="page">Products</span>
@@ -84,10 +84,10 @@
                                     <label for="checkbox-all" class="sr-only">checkbox</label>
                                 </div>
                             </th> --}}
-                            <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
+                            <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
                                 Checkbox
                             </th>
-                            <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
+                            <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
                                 No
                             </th>
                             <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
@@ -104,6 +104,15 @@
                             </th>
                             <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
                                 No Telephone
+                            </th>
+                            <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
+                                Email
+                            </th>
+                            <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
+                                profile Perusahaan
+                            </th>
+                            <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
+                                profile Singkat
                             </th>
                             <th scope="col" class="p-4 text-xs font-medium text-left text-white-500 uppercase dark:text-white-400">
                                 Deskripsi
@@ -229,6 +238,18 @@
                 <input type="number" name="telephone" id="telephone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-telephone" placeholder="Masukkan No Telephone" required="">
             </div>
             <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <textarea id="email" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-email" placeholder="Masukkan Email Perusahaan"></textarea>
+            </div>
+            <div>
+                <label for="profile_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profilee Perusahaan</label>
+                <textarea id="profile_perusahaan" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-profile-perusahaan" placeholder="Masukkan Proile Perusahaan Perusahaan"></textarea>
+            </div>
+            <div>
+                <label for="profile_singkat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profilee Singkat</label>
+                <textarea id="profile_singkat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-profile-singkat" placeholder="Masukkan profilee Singkat Perusahaan"></textarea>
+            </div>
+            <div>
                 <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
                 <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-deskripsi" placeholder="Masukkan Deskripsi Perusahaan"></textarea>
             </div>
@@ -352,7 +373,7 @@
             </div> --}}
             <div>
                 <label for="nama_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Perusahaan</label>
-                <input type="text" id="nama_perusahaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama_perusahaan" placeholder="Masukkan Nama Perusahaan" required>
+                <input type="text" id="nama_perusahaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama-perusahaan" placeholder="Masukkan Nama Perusahaan" required>
             </div>
             <div>
                 <label for="visi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Visi</label>
@@ -371,7 +392,19 @@
                 <input type="number" id="telephone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-telephone" placeholder="Masukkan No Telephone" required>
             </div>
             <div>
-                <label for="deskripsi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Perusahaan</label>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-email" placeholder="Masukkan Email Perusahaan" required>
+            </div>
+            <div>
+                <label for="profile_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profile Perusahaan</label>
+                <textarea id="profile_perusahaan" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-profile-perusahaan" placeholder="Masukkan profile Perusahaan Perusahaan" required></textarea>
+            </div>
+            <div>
+                <label for="profile_singkat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profile Singkat</label>
+                <textarea id="profile_singkat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-profile-singkat" placeholder="Masukkan profile Perusahaan Perusahaan" required></textarea>
+            </div>
+            <div>
+                <label for="deskripsi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
                 <textarea id="deskripsi" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-deskripsi" placeholder="Masukkan Deskripsi Perusahaan" required></textarea>
             </div>
             <div class="bottom-0 left-0 flex justify-center w-full pb-4 space-x-4 md:px-4 md:absolute">
@@ -469,12 +502,15 @@
             event.preventDefault();
             
             // get form data
-            var nama = jQuery(".form-nama_perusahaan").val();
-            var visi = jQuery(".form-visi").val();
-            var misi = jQuery(".form-misi").val();
-            var alamat = jQuery(".form-alamat").val();
-            var telephone = jQuery(".form-telephone").val();
-            var deskripsi = jQuery(".form-deskripsi").val();
+            var nama = jQuery('.form-nama-perusahaan').val();
+            var visi = jQuery('.form-visi').val();
+            var misi = jQuery('.form-misi').val();
+            var alamat = jQuery('.form-alamat').val();
+            var telephone = jQuery('.form-telephone').val();
+            var email = jQuery('.form-email').val();
+            var profile_perusahaan = jQuery('.form-profile-perusahaan').val();
+            var profile_singkat = jQuery('.form-profile-singkat').val();
+            var deskripsi = jQuery('.form-deskripsi').val();
 
             var formData = new FormData();
             formData.append('nama', nama);
@@ -482,6 +518,9 @@
             formData.append('misi', misi);
             formData.append('alamat', alamat);
             formData.append('telephone', telephone);
+            formData.append('email', email);
+            formData.append('profile_perusahaan', profile_perusahaan);
+            formData.append('profile_singkat', profile_singkat);
             formData.append('deskripsi', deskripsi);
 
             // API
@@ -519,7 +558,7 @@
                 },
                 error: function(xhr, status, error) {
                     // show the modal
-                    jQuery('.add-data-pesan-gagal').text(response.message);
+                    jQuery('.add-data-pesan-gagal').text(error);
                     Toastify({
                         node: $('#failed-add-data-notification-content')
                             .clone()
@@ -537,7 +576,7 @@
                     }).showToast();
 
                     setTimeout(function() {
-                        location.reload();
+                        // location.reload();
                     }, 5000);
                 }
             });
@@ -660,17 +699,20 @@
                     orderable: false
                 },
                 { data: 'no', className: 'text-center' },
-                { data: 'nama', className: 'text-center' },
+                { data: 'nama_perusahaan', className: 'text-center' },
                 { data: 'visi', className: 'text-center' },
                 { data: 'misi', className: 'text-center' },
                 { data: 'alamat', className: 'text-center' },
                 { data: 'telephone', className: 'text-center' },
+                { data: 'email', className: 'text-center' },
+                { data: 'profile_perusahaan', className: 'text-center' },
+                { data: 'profile_singkat', className: 'text-center' },
                 { data: 'deskripsi', className: 'text-center' },
                 {
                     data: null,
                     render: function(data, type, row) {
                         // create action button
-                        var editBtn = '<button type="button" id="updateProductButton" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + data.no + '" data-nama="' + data.nama + '" data-visi="' + data.visi + '" data-misi="' + data.misi + '" data-alamat="' + data.alamat + '" data-telephone="' + data.telephone + '" data-deskripsi="' + data.deskripsi + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
+                        var editBtn = '<button type="button" id="updateProductButton" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + data.no + '" data-nama-perusahaan="' + data.nama_perusahaan + '" data-visi="' + data.visi + '" data-misi="' + data.misi + '" data-alamat="' + data.alamat + '" data-telephone="' + data.telephone + '" data-email="' + data.email + '" data-profile-perusahaan="' + data.profile_perusahaan + '" data-profile-singkat="' + data.profile_singkat + '" data-deskripsi="' + data.deskripsi + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
                         var deleteBtn = '<button type="button" id="deleteProductButton" data-drawer-target="drawer-delete-product-default" data-drawer-show="drawer-delete-product-default" aria-controls="drawer-delete-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900 delete-btn" data-id="' + data.no + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>Delete</button>';
 
                         // combine the buttons
@@ -785,11 +827,14 @@
 
         jQuery('#data-table').on('click', '#updateProductButton', function() {
             var id = jQuery(this).attr("data-id");
-            var nama = jQuery(this).attr("data-nama");
+            var nama = jQuery(this).attr("data-nama-perusahaan");
             var visi = jQuery(this).attr("data-visi");
             var misi = jQuery(this).attr("data-misi");
             var alamat = jQuery(this).attr("data-alamat");
             var telephone = jQuery(this).attr("data-telephone");
+            var email = jQuery(this).attr("data-email");
+            var profile_perusahaan = jQuery(this).attr("data-profile-perusahaan");
+            var profile_singkat = jQuery(this).attr("data-profile-singkat");
             var deskripsi = jQuery(this).attr("data-deskripsi");
 
             // handle update-btn action
@@ -799,10 +844,29 @@
             jQuery('.update-misi').val(misi);
             jQuery('.update-alamat').val(alamat);
             jQuery('.update-telephone').val(telephone);
+            jQuery('.update-email').val(email);
+            jQuery('.update-profile-perusahaan').val(profile_perusahaan);
+            jQuery('.update-profile-singkat').val(profile_singkat);
             jQuery('.update-deskripsi').val(deskripsi);
 
             // show drawer (id)
             $('#drawer-update-product-default').removeClass('translate-x-full');
+        });
+
+        // handle 'batal' button action
+        jQuery(document).on('click', '[data-drawer-dismiss="drawer-create-product-default"]', function() { // reset all input fields in the form 
+            jQuery('.update-id').val(''); 
+            jQuery('.update-nama-perusahaan').val(''); 
+            jQuery('.update-visi').val(''); 
+            jQuery('.update-misi').val(''); 
+            jQuery('.update-alamat').val(''); 
+            jQuery('.update-telephone').val(''); 
+            jQuery('.update-email').val(''); 
+            jQuery('.update-profile-perusahaan').val(''); 
+            jQuery('.update-profile-singkat').val(''); 
+            jQuery('.update-deskripsi').val(''); 
+            // hide drawer (id) 
+            $('#drawer-update-product-default').addClass('translate-x-full'); 
         });
 
         // btn-update
@@ -814,9 +878,12 @@
             var misi = jQuery('.update-misi').val();
             var alamat = jQuery('.update-alamat').val();
             var telephone = jQuery('.update-telephone').val();
+            var email = jQuery('.update-email').val();
+            var profilee_perusahaan = jQuery('.update-profile-perusahaan').val();
+            var profilee_singkat = jQuery('.update-profilee-singkat').val();
             var deskripsi = jQuery('.update-deskripsi').val();
             
-            console.log(id);
+            // console.log(id);
             // submit request to API
             jQuery.ajax({
                 url: 'http://127.0.0.1:8000/api/informasi-perusahaan/update-data/' + id,
@@ -831,10 +898,14 @@
                     misi: misi,
                     alamat: alamat,
                     telephone: telephone,
-                    deskripsi: deskripsi
+                    email: email,
+                    profilee_perusahaan: profilee_perusahaan,
+                    profilee_singkat: profilee_singkat,
+                    deskripsi: deskripsi,
                 },
                 success: function(response) {
                     // Show the modal
+                    // console.log('Response: ', response);
                     jQuery('.update-data-pesan-sukses').text(response.message);
                     Toastify({
                         node: $("#success-update-data-notification-content")
@@ -859,7 +930,7 @@
                 },
                 error: function(xhr, status, error) {
                     // Show the modal
-                    jQuery('.update-data-pesan-gagal').text(response.message);
+                    jQuery('.update-data-pesan-gagal').text(error);
                     Toastify({
                         node: $("#failed-update-data-notification-content")
                             .clone()
@@ -878,10 +949,10 @@
                     }).showToast();
                     
                     setTimeout(function() {
-                        location.reload();
+                        // location.reload();
                     }, 5000);
                 }
-            })
+            });
         });
 
     });
@@ -981,6 +1052,12 @@
                     
                 });
             });
+        });
+
+        // handle cance button action
+        jQuery('[data-drawer-hide="drawer-delete-product-default"]').click(function() {
+            // hide drawer (using id)
+            $('#drawer-delete-product-default').addClass('translate-x-full');
         });
     });
 </script>
