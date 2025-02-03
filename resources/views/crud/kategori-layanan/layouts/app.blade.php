@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tentang Perusahaan</title>
+        <title>Kategori Layanan</title>
         @vite(['resources/css/app-flowbite.css','resources/js/app.bundle.js', 'resources/js/dark-mode.js'])
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
@@ -33,9 +33,9 @@
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
         @stack('create-data')
-        {{-- @stack('list-data') --}}
-        {{-- @stack('update-data') --}}
-        {{-- @stack('delete-data') --}}
+        @stack('list-data')
+        @stack('update-data')
+        @stack('delete-data')
         {{-- @stack('get-selected-data') --}}
         
         <!-- END: Script -->

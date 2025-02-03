@@ -5,6 +5,7 @@ use App\Http\Controllers\AutentikasiController;
 use App\Http\Controllers\CompanyInformationController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InformasiPerusahaanController;
+use App\Http\Controllers\KategoriLayananController;
 use App\Models\AboutCompany;
 use App\Models\CompanyInformation;
 use Illuminate\Http\Request;
@@ -32,8 +33,11 @@ Route::middleware(['auth:sanctum'])->group(function() {
         Route::get('/get-selected-data', [InformasiPerusahaanController::class, 'getSelectedData']);
     });
 
-    Route:: prefix('tentang-perusahaan')->group(function() {
-        Route::get('/data-support/company-information', [AboutCompanyController::class, 'supportCompanyInformation']);
-        Route::post('/add-data', [AboutCompanyController::class, 'addData']);
+    Route:: prefix('kategori-layanan')->group(function() {
+        Route::get('/data-support/informasi-perusahaan', [KategoriLayananController::class, 'supportInformasiPerusahaan']);
+        Route::post('/add-data', [KategoriLayananController::class, 'addData']);
+        Route::post('/list-data', [KategoriLayananController::class, 'listData']);
+        Route::post('/update-data/{id}', [KategoriLayananController::class, 'updateData']);
+        Route::delete('/delete-data/{id}', [KategoriLayananController::class, 'deleteData']);
     });
 });
