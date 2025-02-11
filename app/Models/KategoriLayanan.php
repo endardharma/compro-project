@@ -10,7 +10,7 @@ class KategoriLayanan extends Model
     use HasFactory;
 
     protected $table = 'kategori_layanan';
-    protected $fillable = ['perusahaan_id', 'nama_kategori', 'deskripsi', 'action_invitation', 'images'];
+    protected $fillable = ['perusahaan_id', 'nama_kategori', 'deskripsi', 'action_invitation', 'images', 'is_selected'];
 
     public function informasiPerusahaan()
     {

@@ -75,11 +75,11 @@
                 <p id="profile_perusahaan">
                 </p>
                 <ul id="list">
-                    <li><i class="bi bi-check2-circle"></i><span>Graduation</span></li>
+                    {{-- <li><i class="bi bi-check2-circle"></i><span>Graduation</span></li>
                     <li><i class="bi bi-check2-circle"></i><span>Prewedding</span></li>
                     <li><i class="bi bi-check2-circle"></i><span>Engagement</span></li>
                     <li><i class="bi bi-check2-circle"></i><span>Event</span></li>
-                    <li><i class="bi bi-check2-circle"></i><span>Product</span></li>
+                    <li><i class="bi bi-check2-circle"></i><span>Product</span></li> --}}
                 </ul>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -96,8 +96,8 @@
 <section id="features" class="features section">
     <div class="container">
         <!-- BEGIN: Tab Nav -->
-        <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
-            <li class="nav-item col-3">
+        <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100" id="kategori-list">
+            {{-- <li class="nav-item col-3">
                 <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
                     <i class="bi bi-binoculars"></i>
                     <h4 class="d-none d-lg-block">Graduation</h4>
@@ -115,12 +115,12 @@
                     <h4 class="d-none d-lg-block">Engagement</h4>
                 </a>
             </li>
-            <li class="nav-item col-3">
+            <li class="nav-item col-3"> 
                 <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
                     <i class="bi bi-command"></i>
                     <h4 class="d-none d-lg-block">Prewedding</h4>
                 </a>
-            </li>
+            </li> --}}
         </ul>
         <!-- END: Tab Nav -->
         
@@ -129,23 +129,19 @@
             <div class="tab-pane fade active show" id="features-tab-1">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                        <h3>Graduation Photoshot</h3>
-                        <p class="fst-italic">
-                            Wisuda merupakan momen yang di tunggu oleh semua mahasiswa ketika melaksanakan atau mengambil jenjang perkuliahan.
-                            Banyak momen yang tidak ingin terlewatkan ketika mahasiswa melakukan prosesi wisuda. Oleh karena itu, kami menyediakan
-                            jasa foto wisuda yang akan membantu anda dalam pengambilan momen wisuda anda bersama keluarga. Apasih yg di dapatkan dari jasa foto wisuda ini ?
+                        <h3 id="nama_kategori"></h3>
+                        <p class="fst-italic" id="deskripsi_kategori">
                         </p>
                         <ul>
                             <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
                             <li><i class="bi bi-check2-all"></i><span>All Soft File</span></li>
                             <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
                         </ul>
-                        <p>
-                            Tunggu apa lagi ? segera booking layanan kami untuk momen wisuda anda. Dapatkan promo yang menarik. Kami senantiasa bekerja secara profesional dan menjunjung tinggi tingkat kepuasan dari pelayanan kami. #makeyourbestmomentwithus
+                        <p id="action_invitation">
                         </p>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 text-center">
-                        <img src="assets/img/wisuda1.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid" id="images_kategori" src="" alt="Selected Image">
                     </div>
                 </div>
             </div>
@@ -723,7 +719,8 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/team/team-abi.jpg" alt="" class="img-fluid">
+                        {{-- <img src="assets/img/team/team-abi.jpg" alt="" class="img-fluid"> --}}
+                        <img src="" alt="" class="img-fluid">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
@@ -732,8 +729,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Abi Rafdi</h4>
-                        <span>Photographer</span>
+                        <h4>Mr.X</h4>
+                        <span>Posisi</span>
                     </div>
                 </div>
             </div>
@@ -743,7 +740,8 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/team/team-endar.jpg" alt="" class="img-fluid">
+                        {{-- <img src="assets/img/team/team-endar.jpg" alt="" class="img-fluid"> --}}
+                        <img src="" alt="" class="img-fluid">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
@@ -752,8 +750,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Endar Dharma</h4>
-                        <span>Photographer / Videographer</span>
+                        <h4>Mr.X</h4>
+                        <span>Posisi</span>
                     </div>
                 </div>
             </div>
@@ -763,7 +761,8 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/team/team-apet.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
+                        {{-- <img src="assets/img/team/team-apet.jpg" alt="" class="img-fluid"> --}}
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
@@ -772,8 +771,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Hafidz Sirojul</h4>
-                        <span>Photographer</span>
+                        <h4>Mr.X</h4>
+                        <span>Posisi</span>
                     </div>
                 </div>
             </div>
@@ -783,7 +782,8 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/team/team-riko.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
+                        {{-- <img src="assets/img/team/team-riko.jpg" alt="" class="img-fluid"> --}}
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
@@ -792,8 +792,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Eriko Andrianto</h4>
-                        <span>Editor</span>
+                        <h4>Mr.X</h4>
+                        <span>Posisi</span>
                     </div>
                 </div>
             </div>
@@ -844,7 +844,7 @@
                     <i class="bi bi-telephone flex-shrink-0"></i>
                     <div>
                         <h3>Email Us</h3>
-                        <p>ambarajourney@gmail.com</p>
+                        <p>email@gmail.com</p>
                     </div>
                 </div>
                 <!-- END: Info Item -->
@@ -949,4 +949,134 @@
     });
     
 </script>
+@endpush
+
+@push('get-kategori-layanan')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(name) {
+    function getCookie(name) {
+        var cookieName = name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var cookieArray = decodedCookie.split(';');
+
+        for (var i = 0; i < cookieArray.length; i++)
+        {
+            var cookie = cookieArray[i];
+
+            while(cookie.charAt(0) === ' ')
+            {
+                cookie = cookie.substring(1);
+            }
+
+            if (cookie.indexOf(cookieName) === 0)
+            {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+    }
+
+    var token = getCookie('token');
+    // console.log('Token Get Layanan: ', token);
+
+    jQuery.ajax({
+        url: 'http://127.0.0.1:8000/api/kategori-layanan/get-selected-data',
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + token
+        },
+        success: function(response) {
+            if (response)
+            {
+                $('#nama_kategori').text(response.nama_kategori);
+                $('#deskripsi_kategori').text(response.deskripsi);
+                $('#action_invitation').text(response.action_invitation)   
+                // $('#images_kategori').text(response.images);
+                var imageUrl = 'http://127.0.0.1:8000/storage/' + response.images;
+                $('#images_kategori').attr('src', imageUrl);
+            }
+            else
+            {
+                alert('Data tidak ditemukan: ' + response);
+                console.log('Data tidak ditemukan');
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error: ', error);
+        }
+    });
+});
+</script>
+@endpush
+
+@push('get-list-kategori')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+    // get cookie
+    function getCookie(name)
+        {
+            var cookieName = name + '=';
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++)
+            {
+                var cookie = cookieArray[i];
+                
+                while (cookie.charAt(0) === ' ')
+                {
+                    cookie = cookie.substring(1);   
+                }
+
+                if (cookie.indexOf(cookieName) === 0)
+                {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+        }
+
+        var token = getCookie('token');
+
+        $.ajax({
+            url: 'http://127.0.0.1:8000/api/tipe-kategori/get-list-data',
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+            },
+            success: function(response) {
+                $('#kategori-list').empty();
+                $('#list').empty();
+
+                // iterasi melalui data dan buat elemen untuk setiap kategori
+                response.data.forEach(function(kategori, index) {
+                    // 1. Buat elemen untuk <ul class="nav nav-tabs"> (i dan h4)
+                    const navItem = `
+                    <li class="nav-item col-3">
+                        <a class="nav-link ${index === 0 ? 'active show' : ''}" data-bs-toggle="tab" data-bs-target="#features-tab-${index + 1}">
+                            <i class="${kategori.code_icon}"></i>
+                            <h4 class="d-none d-lg-block">${kategori.nama_tipe_kategori}</h4>
+                        </a>
+                    </li> 
+                    `;
+
+                    // masukkan html ke dalam element ID 'kategori-list'
+                    $('#kategori-list').append(navItem);
+
+                    // 2. Buat elemen untuk <ul id="list"> (span)
+                        const listItem = `
+                        <li>
+                            <i class="bi bi-check2-circle"></i>
+                            <span>${kategori.nama_tipe_kategori}</span>
+                        </li>
+                    `;
+                    $('#list').append(listItem); // Tambahkan ke <ul id="list">
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching data: ', error);
+            }
+        });
+});
+</script>    
 @endpush

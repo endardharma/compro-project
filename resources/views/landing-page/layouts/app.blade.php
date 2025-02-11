@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Ambara Journey</title>
+    <title>Index - Nama Perusahaan</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -995,5 +995,7 @@
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
         @stack('get-info-perusahaan')
+        @stack('get-kategori-layanan')
+        @stack('get-list-kategori')
     </body>
 </html>

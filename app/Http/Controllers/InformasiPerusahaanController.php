@@ -43,6 +43,7 @@ class InformasiPerusahaanController extends Controller
         $info->profile_perusahaan = $request->profile_perusahaan;
         $info->profile_singkat = $request->profile_singkat;
         $info->deskripsi = $request->deskripsi;
+
         $info->save();
 
         return response()->json([
@@ -113,22 +114,20 @@ class InformasiPerusahaanController extends Controller
     public function updateData(Request $request, $id)
     {
         $find = InformasiPerusahaan::where('id', $id)->first();
-        // dd($find);
 
         if ($find)
         {
-            $request->nama_perusahaan != null ? $find->nama_perusahaan = $request->nama_perusahaan : true;
+            $request->nama != null ? $find->nama_perusahaan = $request->nama : true;
             $request->visi != null ? $find->visi = $request->visi : true;
             $request->misi != null ? $find->misi = $request->misi : true;
             $request->alamat != null ? $find->alamat = $request->alamat : true;
-            $request-> telephone != null ? $find->telephone = $request->telephone : true;
-            $request-> email != null ? $find->email = $request->email : true;
-            $request-> profile_perusahaan != null ? $find->profile_perusahaan = $request->profile_perusahaan : true;
-            $request-> telephone != null ? $find->telephone = $request->telephone : true;
+            $request->telephone != null ? $find->telephone = $request->telephone : true;
+            $request->email != null ? $find->email = $request->email : true;
+            $request->profilee_perusahaan != null ? $find->profile_perusahaan = $request->profilee_perusahaan : true;
+            $request->profilee_singkat != null ? $find->profile_singkat = $request->profilee_singkat : true;
             $request->deskripsi != null ? $find->deskripsi = $request->deskripsi : true;
-
+            
             $find->save();
-            // dd($find);
 
             return response()->json([
                 'success' => true,
@@ -142,6 +141,7 @@ class InformasiPerusahaanController extends Controller
                 'message' => 'Gagal melakukan update data informasi perusahaan',
             ], 400);
         }
+
     }
 
     public function deleteData($id)

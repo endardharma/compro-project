@@ -6,6 +6,7 @@ use App\Http\Controllers\CompanyInformationController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InformasiPerusahaanController;
 use App\Http\Controllers\KategoriLayananController;
+use App\Http\Controllers\TipeKategoriController;
 use App\Models\AboutCompany;
 use App\Models\CompanyInformation;
 use Illuminate\Http\Request;
@@ -35,9 +36,20 @@ Route::middleware(['auth:sanctum'])->group(function() {
 
     Route:: prefix('kategori-layanan')->group(function() {
         Route::get('/data-support/informasi-perusahaan', [KategoriLayananController::class, 'supportInformasiPerusahaan']);
+        Route::get('/data-support/informasi-perusahaan/nama-kategori', [KategoriLayananController::class, 'supportNamaKtegori']);
         Route::post('/add-data', [KategoriLayananController::class, 'addData']);
         Route::post('/list-data', [KategoriLayananController::class, 'listData']);
         Route::post('/update-data/{id}', [KategoriLayananController::class, 'updateData']);
         Route::delete('/delete-data/{id}', [KategoriLayananController::class, 'deleteData']);
+        Route::get('/get-selected-data', [KategoriLayananController::class, 'getSelectedData']);
+        Route::post('/update-selection', [KategoriLayananController::class, 'updateSelection']);
+    });
+
+    Route::prefix('tipe-kategori')->group(function() {
+        Route::post('/list-data', [TipeKategoriController::class, 'listData']);
+        Route::post('/add-data', [TipeKategoriController::class, 'addData']);
+        Route::put('/update-data/{id}', [TipeKategoriController::class, 'updateData']);
+        Route::delete('/delete-data/{id}', [TipeKategoriController::class, 'deleteData']);
+        Route::get('/get-list-data', [TipeKategoriController::class, 'getListData']);
     });
 });

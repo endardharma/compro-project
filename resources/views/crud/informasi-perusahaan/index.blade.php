@@ -206,7 +206,6 @@
     </div>
 </div>
 
-
 <!-- BEGIN: Update Data -->
 <div id="drawer-update-product-default" class="fixed top-0 right-0 z-40 w-full h-screen max-w-xs p-4 overflow-y-auto transition-transform translate-x-full bg-white dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label" aria-hidden="true">
     <h5 id="drawer-label" class="inline-flex items-center mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Update Product</h5>
@@ -223,15 +222,15 @@
             </div>
             <div>
                 <label for="visi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Visi</label>
-                <input type="text" name="visi" id="visi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-nama-perusahaan update-visi" placeholder="Masukkan Visi Perusahaan" required="">
+                <input type="text" name="visi" id="visi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-visi" placeholder="Masukkan Visi Perusahaan" required="">
             </div>
             <div>
                 <label for="misi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Misi</label>
-                <input type="text" name="misi" id="misi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-nama-perusahaan update-misi" placeholder="Masukkan Misi Perusahaan" required="">
+                <input type="text" name="misi" id="misi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-misi" placeholder="Masukkan Misi Perusahaan" required="">
             </div>
             <div>
-                <label for="misi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat</label>
-                <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-nama-perusahaan update-alamat" placeholder="Masukkan Alamat Perusahaan" required="">
+                <label for="alamat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alamat</label>
+                <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-alamat" placeholder="Masukkan Alamat Perusahaan" required="">
             </div>
             <div>
                 <label for="telephone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telephone</label>
@@ -242,29 +241,30 @@
                 <textarea id="email" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-email" placeholder="Masukkan Email Perusahaan"></textarea>
             </div>
             <div>
-                <label for="profile_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profilee Perusahaan</label>
-                <textarea id="profile_perusahaan" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-profile-perusahaan" placeholder="Masukkan Proile Perusahaan Perusahaan"></textarea>
+                <label for="profile_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profile Perusahaan</label>
+                <textarea id="profile_perusahaan" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-profile-perusahaan" placeholder="Masukkan Profile Perusahaan"></textarea>
             </div>
             <div>
-                <label for="profile_singkat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profilee Singkat</label>
-                <textarea id="profile_singkat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-profile-singkat" placeholder="Masukkan profilee Singkat Perusahaan"></textarea>
+                <label for="profile_singkat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profile Singkat</label>
+                <textarea id="profile_singkat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-profile-singkat" placeholder="Masukkan Profile Singkat Perusahaan"></textarea>
             </div>
             <div>
                 <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
                 <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-deskripsi" placeholder="Masukkan Deskripsi Perusahaan"></textarea>
             </div>
         </div>
-        <div class="bottom-0 left-0 flex justify-center w-full pb-4 mt-4 space-x-4 sm:absolute sm:px-4 sm:mt-0">
+        <div class="flex justify-center w-full pt-4 space-x-4">
             <button type="button" class="w-full justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn-update">
                 Update
             </button>
-            <button type="button" data-drawer-dismiss="drawer-create-product-default" aria-controls="drawer-create-product-default" class="inline-flex w-full justify-center text-gray-500 items-center bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+            <button type="button" data-drawer-dismiss="drawer-update-product-default" aria-controls="drawer-update-product-default" class="inline-flex w-full justify-center text-gray-500 items-center bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
                 <svg aria-hidden="true" class="w-5 h-5 -ml-1 sm:mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 Batal
             </button>
         </div>
     </form>
 </div>
+
 <!-- END: Update Data -->
 
 <!-- BEGIN: Notification success update data-->
@@ -367,10 +367,6 @@
     </button>
     <form action="#">
         <div class="space-y-4">
-            {{-- <div>
-                <label for="select" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select</label>
-                <input type="text" id="select" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama_perusahaan" placeholder="Masukkan Nama Perusahaan" required>
-            </div> --}}
             <div>
                 <label for="nama_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Perusahaan</label>
                 <input type="text" id="nama_perusahaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama-perusahaan" placeholder="Masukkan Nama Perusahaan" required>
@@ -396,29 +392,29 @@
                 <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-email" placeholder="Masukkan Email Perusahaan" required>
             </div>
             <div>
-                <label for="profile_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profile Perusahaan</label>
-                <textarea id="profile_perusahaan" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-profile-perusahaan" placeholder="Masukkan profile Perusahaan Perusahaan" required></textarea>
+                <label for="profile_perusahaan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profile Perusahaan</label>
+                <textarea id="profile_perusahaan" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-profile-perusahaan" placeholder="Masukkan Profile Perusahaan" required></textarea>
             </div>
             <div>
-                <label for="profile_singkat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">profile Singkat</label>
-                <textarea id="profile_singkat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-profile-singkat" placeholder="Masukkan profile Perusahaan Perusahaan" required></textarea>
+                <label for="profile_singkat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Profile Singkat</label>
+                <textarea id="profile_singkat" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-profile-singkat" placeholder="Masukkan Profile Singkat" required></textarea>
             </div>
             <div>
                 <label for="deskripsi" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
                 <textarea id="deskripsi" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-deskripsi" placeholder="Masukkan Deskripsi Perusahaan" required></textarea>
             </div>
-            <div class="bottom-0 left-0 flex justify-center w-full pb-4 space-x-4 md:px-4 md:absolute">
-                <button type="button" class="text-white w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn-create">
-                    Tambah Data
-                </button>
-                <button type="button" data-drawer-dismiss="drawer-create-product-default" aria-controls="drawer-create-product-default" class="inline-flex w-full justify-center text-gray-500 items-center bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
-                    <svg aria-hidden="true" class="w-5 h-5 -ml-1 sm:mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    Batal
-                </button>
-            </div>
+        </div>
+        <div class="flex justify-center w-full pt-4 space-x-4">
+            <button type="button" class="text-white w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn-create">
+                Tambah Data
+            </button>
+            <button type="button" data-drawer-dismiss="drawer-create-product-default" aria-controls="drawer-create-product-default" class="inline-flex w-full justify-center text-gray-500 items-center bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
+                <svg aria-hidden="true" class="w-5 h-5 -ml-1 sm:mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                Batal
+            </button>
+        </div>
     </form>
 </div>
-{{-- @yield('create') --}}
 <!-- END: Add Data -->
 
 <!-- BEGIN: Notification success add data-->
@@ -855,7 +851,7 @@
         });
 
         // handle 'batal' button action
-        jQuery(document).on('click', '[data-drawer-dismiss="drawer-create-product-default"]', function() { // reset all input fields in the form 
+        jQuery(document).on('click', '[data-drawer-dismiss="drawer-update-product-default"]', function() { // reset all input fields in the form 
             jQuery('.update-id').val(''); 
             jQuery('.update-nama-perusahaan').val(''); 
             jQuery('.update-visi').val(''); 
@@ -881,10 +877,9 @@
             var telephone = jQuery('.update-telephone').val();
             var email = jQuery('.update-email').val();
             var profilee_perusahaan = jQuery('.update-profile-perusahaan').val();
-            var profilee_singkat = jQuery('.update-profilee-singkat').val();
+            var profilee_singkat = jQuery('.update-profile-singkat').val();
             var deskripsi = jQuery('.update-deskripsi').val();
             
-            // console.log(id);
             // submit request to API
             jQuery.ajax({
                 url: 'http://127.0.0.1:8000/api/informasi-perusahaan/update-data/' + id,
@@ -905,8 +900,8 @@
                     deskripsi: deskripsi,
                 },
                 success: function(response) {
+                    console.log(nama);
                     // Show the modal
-                    // console.log('Response: ', response);
                     jQuery('.update-data-pesan-sukses').text(response.message);
                     Toastify({
                         node: $("#success-update-data-notification-content")
@@ -926,7 +921,7 @@
                     }).showToast();
                     
                     setTimeout(function() {
-                        location.reload();
+                        // location.reload();
                     }, 3000);
                 },
                 error: function(xhr, status, error) {
@@ -950,7 +945,7 @@
                     }).showToast();
                     
                     setTimeout(function() {
-                        location.reload();
+                        // location.reload();
                     }, 5000);
                 }
             });
@@ -1028,7 +1023,7 @@
                     },
                     error: function(xhr, status, error) {
                         // Show the modal
-                        jQuery('.delete-data-pesan-gagal').text(response.message);
+                        jQuery('.delete-data-pesan-gagal').text(error);
                         Toastify({
                             node: $("#failed-delete-data-notification-content")
                                 .clone()

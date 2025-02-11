@@ -280,5 +280,28 @@ class KategoriLayananController extends Controller
             ], 400);
         }
     }
+
+    public function updateSelection(Request $request)
+    {
+        $id = $request->input('id');
+
+        // dd($id);
+        // set all is_selected to false
+        KategoriLayanan::query()->update(['is_selected' => false]);
+
+        // update selected kategori with is_selected = true
+        KategoriLayanan::where('id', $id)->update(['is_selected' => true]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Data landing-page bagian kategori-layanan erhasil di update '
+        ], 201);
+    }
+
+    public function getSelectedData(Request $request)
+    {
+        $selectedData = KategoriLayanan::where('is_selected', true)->first();
+        return response()->json($selectedData);
+    }
     
 }
