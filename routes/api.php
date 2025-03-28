@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutCompanyController;
 use App\Http\Controllers\AutentikasiController;
+use App\Http\Controllers\BrandMessagingController;
 use App\Http\Controllers\CompanyInformationController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InformasiPerusahaanController;
@@ -36,7 +37,7 @@ Route::middleware(['auth:sanctum'])->group(function() {
 
     Route:: prefix('kategori-layanan')->group(function() {
         Route::get('/data-support/informasi-perusahaan', [KategoriLayananController::class, 'supportInformasiPerusahaan']);
-        Route::get('/data-support/informasi-perusahaan/nama-kategori', [KategoriLayananController::class, 'supportNamaKtegori']);
+        Route::get('/data-support/informasi-perusahaan/nama-kategori-id', [KategoriLayananController::class, 'supportNamaKategoriId']);
         Route::post('/add-data', [KategoriLayananController::class, 'addData']);
         Route::post('/list-data', [KategoriLayananController::class, 'listData']);
         Route::post('/update-data/{id}', [KategoriLayananController::class, 'updateData']);
@@ -52,4 +53,14 @@ Route::middleware(['auth:sanctum'])->group(function() {
         Route::delete('/delete-data/{id}', [TipeKategoriController::class, 'deleteData']);
         Route::get('/get-list-data', [TipeKategoriController::class, 'getListData']);
     });
+
+    Route::prefix('brand-messagings')->group(function() {
+        Route::post('/add-data', [BrandMessagingController::class, 'addData']);
+        Route::post('/list-data', [BrandMessagingController::class, 'listData']);
+        Route::put('/update-data/{id}', [BrandMessagingController::class, 'updateData']);
+        Route::delete('/delete-data/{id}', [BrandMessagingController::class, 'deleteData']);
+        Route::get('/get-selected-data', [BrandMessagingController::class, 'getSelectedData']);
+        Route::post('/update-selection', [BrandMessagingController::class, 'updateSelection']);
+    });
+    
 });

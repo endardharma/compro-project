@@ -126,13 +126,13 @@
         
         <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
             <!-- BEGIN: Content Graduation Photoshot -->
-            <div class="tab-pane fade active show" id="features-tab-1">
+            {{-- <div class="tab-pane fade active show" id="features-tab-1">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                         <h3 id="nama_kategori"></h3>
                         <p class="fst-italic" id="deskripsi_kategori">
                         </p>
-                        <ul>
+                        <ul id="features-list">
                             <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
                             <li><i class="bi bi-check2-all"></i><span>All Soft File</span></li>
                             <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
@@ -144,17 +144,15 @@
                         <img src="" alt="" class="img-fluid" id="images_kategori" src="" alt="Selected Image">
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- END: Content Graduation Photoshot -->
 
             <!-- BEGIN: Content Product Photoshot -->
-            <div class="tab-pane fade" id="features-tab-2">
+            {{-- <div class="tab-pane fade" id="features-tab-2">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                        <h3>Product Photoshot</h3>
+                        <h3></h3>
                         <p class="fst-italic">
-                            Jika rebranding menjadi prioritas bisnis anda, kami hadir untuk memberikan dukungan visual yang kuat. Dengan sentuhan profesional, foto produk kami akan memperkuat
-                            identitas baru yang ingin anda hadirkan kepada pelanggan
                         </p>
                         <ul>
                             <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
@@ -163,23 +161,21 @@
                             <li><i class="bi bi-check2-all"></i><span>Book Editing</span></li>
                         </ul>
                         <p>
-                            Tunggu apa lagi ? segera booking layanan kami untuk foto produk anda. Dapatkan promo yang menarik. Kami senantiasa bekerja secara profesional dan menjunjung tinggi tingkat kepuasan dari pelayanan kami. #makeyourbestmomentwithus
                         </p>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 text-center">
                         <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- END: Content Product Photoshot -->
 
             <!-- BEGIN: Content Engagement Photoshot -->
-            <div class="tab-pane fade" id="features-tab-3">
+            {{-- <div class="tab-pane fade" id="features-tab-3">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                        <h3>Engagement Photoshot</h3>
+                        <h3></h3>
                         <p>
-                            Abadikan momen bahagia Anda dengan layanan foto lamaran yang spesial dari kami. Kami hadir untuk memastikan setiap senyuman, tatapan, dan momen manis Anda terekam dalam foto-foto yang penuh makna
                         </p>
                         <ul>
                             <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
@@ -187,23 +183,21 @@
                             <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
                         </ul>
                         <p class="fst-italic">
-                            Tunggu apa lagi ? segera booking layanan kami untuk foto produk anda. Dapatkan promo yang menarik. Kami senantiasa bekerja secara profesional dan menjunjung tinggi tingkat kepuasan dari pelayanan kami. #makeyourbestmomentwithus
                         </p>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 text-center">
                         <img src="assets/img/lamaran1.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- END: Content Engagement Photoshot -->
 
             <!-- BEGIN: Content Prewedding Photoshot -->
-            <div class="tab-pane fade" id="features-tab-4">
+            {{-- <div class="tab-pane fade" id="features-tab-4">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                        <h3>Prewedding Photoshot</h3>
+                        <h3></h3>
                         <p>
-                            Abadikan momen sebelum hari besar Anda dengan layanan foto prewedding yang romantis dan penuh makna. Kami akan membantu menciptakan konsep yang sesuai dengan kepribadian dan cerita cinta Anda, memastikan foto-foto yang akan dikenang sepanjang hidup
                         </p>
                         <ul>
                             <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
@@ -211,14 +205,13 @@
                             <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
                         </ul>
                         <p class="fst-italic">
-                            Tunggu apa lagi ? segera booking layanan kami untuk foto produk anda. Dapatkan promo yang menarik. Kami senantiasa bekerja secara profesional dan menjunjung tinggi tingkat kepuasan dari pelayanan kami. #makeyourbestmomentwithus
                         </p>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 text-center">
                         <img src="assets/img/prewed1.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- END: Content Prewedding Photoshot -->
 
 
@@ -232,8 +225,10 @@
     <div class="container">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
             <div class="col-xl-9 text-center text-xl-start">
-                <h3>Fotografi dengan Makna!</h3>
-                <p>"Jadikan setiap momen dalam hidup Anda lebih dari sekadar kenangan—biarkan foto-foto yang penuh makna menjadi cerita abadi. Kami siap membantu Anda menciptakan keindahan di setiap jepretan. Percayakan momen istimewa Anda kepada kami!"</p>
+                {{-- <h3>Fotografi dengan Makna!</h3>
+                <p>"Jadikan setiap momen dalam hidup Anda lebih dari sekadar kenangan—biarkan foto-foto yang penuh makna menjadi cerita abadi. Kami siap membantu Anda menciptakan keindahan di setiap jepretan. Percayakan momen istimewa Anda kepada kami!"</p> --}}
+                <h3 id="title"></h3>
+                <p id="content"></p>
             </div>
             <div class="col-xl-3 cta-btn-container text-center">
                 <a href="#" class="cta-btn align-middle">Hubungi Kami!</a>
@@ -719,7 +714,7 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        {{-- <img src="assets/img/team/team-abi.jpg" alt="" class="img-fluid"> --}}
+                        <img src="assets/img/team/team-abi.jpg" alt="" class="img-fluid">
                         <img src="" alt="" class="img-fluid">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -729,8 +724,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Mr.X</h4>
-                        <span>Posisi</span>
+                        <h4>Abi Rafdi</h4>
+                        <span>Photographer</span>
                     </div>
                 </div>
             </div>
@@ -740,7 +735,7 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        {{-- <img src="assets/img/team/team-endar.jpg" alt="" class="img-fluid"> --}}
+                        <img src="assets/img/team/team-endar.jpg" alt="" class="img-fluid">
                         <img src="" alt="" class="img-fluid">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -750,8 +745,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Mr.X</h4>
-                        <span>Posisi</span>
+                        <h4>Endar Dharma Mukti</h4>
+                        <span>Photographer and Videographer</span>
                     </div>
                 </div>
             </div>
@@ -761,8 +756,8 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
+                        <img src="assets/img/team/team-apet.jpg" alt="" class="img-fluid">
                         <img src="" alt="" class="img-fluid">
-                        {{-- <img src="assets/img/team/team-apet.jpg" alt="" class="img-fluid"> --}}
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
@@ -771,8 +766,8 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Mr.X</h4>
-                        <span>Posisi</span>
+                        <h4>Fransiskus Tito</h4>
+                        <span>Photographer and Public Relathions (PR)</span>
                     </div>
                 </div>
             </div>
@@ -782,8 +777,8 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
+                        <img src="assets/img/team/team-apet.jpg" alt="" class="img-fluid">
                         <img src="" alt="" class="img-fluid">
-                        {{-- <img src="assets/img/team/team-riko.jpg" alt="" class="img-fluid"> --}}
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
@@ -792,8 +787,29 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h4>Mr.X</h4>
-                        <span>Posisi</span>
+                        <h4>Hafidz Sirojul Munir</h4>
+                        <span>Marketing and Digial Marketing Specialist</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Team Member -->
+
+            <!-- BEGIN: Team Member -->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="assets/img/team/team-riko.jpg" alt="" class="img-fluid">
+                        <img src="" alt="" class="img-fluid">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Eriko Andrianto</h4>
+                        <span>Editor and Social Media Specialist</span>
                     </div>
                 </div>
             </div>
@@ -951,34 +967,67 @@
 </script>
 @endpush
 
-@push('get-kategori-layanan')
+{{-- @push('get-kategori-layanan')
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function(name) {
+$(document).ready(function() {
     function getCookie(name) {
         var cookieName = name + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var cookieArray = decodedCookie.split(';');
 
-        for (var i = 0; i < cookieArray.length; i++)
-        {
+        for (var i = 0; i < cookieArray.length; i++) {
             var cookie = cookieArray[i];
-
-            while(cookie.charAt(0) === ' ')
-            {
+            while (cookie.charAt(0) === ' ') {
                 cookie = cookie.substring(1);
             }
-
-            if (cookie.indexOf(cookieName) === 0)
-            {
+            if (cookie.indexOf(cookieName) === 0) {
                 return cookie.substring(cookieName.length, cookie.length);
             }
         }
+        return "";
     }
 
     var token = getCookie('token');
-    // console.log('Token Get Layanan: ', token);
 
+    // Function to get selected checkbox IDs
+    function getSelectedCheckboxIds() {
+        var selectedIds = [];
+        $('.row-checkbox:checked').each(function() {
+            selectedIds.push(parseInt($(this).val())); // Pastikan ID dikonversi menjadi integer
+        });
+        return selectedIds;
+    }
+
+    // Event listener for the select button
+    $('#selectProduct').on('click', function() {
+        var selectedCheckboxIds = getSelectedCheckboxIds();
+        if (selectedCheckboxIds.length > 0) {
+            $.ajax({
+                url: 'http://127.0.0.1:8000/api/kategori-layanan/update-selection',
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Content-Type': 'application/json',
+                },
+                data: JSON.stringify({
+                    ids: selectedCheckboxIds
+                }),
+                success: function(response) {
+                    alert('Data berhasil dipilih dan disimpan');
+                    location.reload();
+                },
+                error: function(xhr, status, error) {
+                    alert('Data gagal dipilih, terjadi kesalahan dalam melakukan checkbox data: ' + error);
+                    console.error('Error: ', error);
+                }
+            });
+        } else {
+            alert('Silahkan pilih satu item');
+        }
+    });
+
+    // Fetch selected data
     jQuery.ajax({
         url: 'http://127.0.0.1:8000/api/kategori-layanan/get-selected-data',
         method: 'GET',
@@ -986,19 +1035,310 @@ $(document).ready(function(name) {
             'Authorization': 'Bearer ' + token
         },
         success: function(response) {
-            if (response)
-            {
-                $('#nama_kategori').text(response.nama_kategori);
-                $('#deskripsi_kategori').text(response.deskripsi);
-                $('#action_invitation').text(response.action_invitation)   
-                // $('#images_kategori').text(response.images);
-                var imageUrl = 'http://127.0.0.1:8000/storage/' + response.images;
-                $('#images_kategori').attr('src', imageUrl);
+            console.log('Response:', response); // Tambahkan log ini
+            if (response.data && response.data.length > 0) {
+                $('#kategori-list').empty();
+                $('#list').empty();
+
+                response.data.forEach(function(kategori, index) {
+                    console.log('Kategori:', kategori); // Tambahkan log ini
+                    if (kategori.tipe_kategori && kategori.tipe_kategori_id === kategori.tipe_kategori.id) {
+                        // Menambahkan kategori ke dalam tab navigasi
+                        $('#kategori-list').append(`
+                            <li class="nav-item col-3">
+                                <a class="nav-link ${index === 0 ? 'active show' : ''}" data-bs-toggle="tab" data-bs-target="#features-tab-${kategori.tipe_kategori_id}">
+                                    <i class="${kategori.tipe_kategori.code_icon}"></i>
+                                    <h4 class="d-none d-lg-block">${kategori.tipe_kategori.nama_tipe_kategori}</h4>
+                                </a>
+                            </li>
+                        `);
+
+                        // Menambahkan konten kategori ke dalam tab content
+                        $('.tab-content').append(`
+                            <div class="tab-pane fade ${index === 0 ? 'active show' : ''}" id="features-tab-${kategori.tipe_kategori_id}">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h3>${kategori.tipe_kategori.nama_tipe_kategori}</h3>
+                                        <p class="fst-italic">${kategori.deskripsi}</p>
+                                        <ul id="features-list">
+                                            <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
+                                            <li><i class="bi bi-check2-all"></i><span>All Soft File</span></li>
+                                            <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
+                                        </ul>
+                                        <ul>
+                                            <li><span>${kategori.action_invitation}</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 text-center">
+                                        <img src="http://127.0.0.1:8000/storage/${kategori.images}" alt="${kategori.tipe_kategori.nama_tipe_kategori}" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        `);
+                    }
+                });
+            } else {
+                console.error('No data found');
             }
-            else
-            {
-                alert('Data tidak ditemukan: ' + response);
-                console.log('Data tidak ditemukan');
+        },
+        error: function(xhr, status, error) {
+            console.error('Error: ', error);
+        }
+    });
+});
+</script>
+@endpush --}}
+
+{{-- @push('get-kategori-layanan')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    function getCookie(name) {
+        var cookieName = name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var cookieArray = decodedCookie.split(';');
+
+        for (var i = 0; i < cookieArray.length; i++) {
+            var cookie = cookieArray[i];
+            while (cookie.charAt(0) === ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(cookieName) === 0) {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+        return "";
+    }
+
+    var token = getCookie('token');
+
+    // Function to get selected checkbox IDs
+    function getSelectedCheckboxIds() {
+        var selectedIds = [];
+        $('.row-checkbox:checked').each(function() {
+            selectedIds.push(parseInt($(this).val())); // Pastikan ID dikonversi menjadi integer
+        });
+        return selectedIds;
+    }
+
+    // Event listener for the select button
+    $('#selectProduct').on('click', function() {
+        var selectedCheckboxIds = getSelectedCheckboxIds();
+        if (selectedCheckboxIds.length > 0) {
+            $.ajax({
+                url: 'http://127.0.0.1:8000/api/kategori-layanan/update-selection',
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Content-Type': 'application/json',
+                },
+                data: JSON.stringify({
+                    ids: selectedCheckboxIds
+                }),
+                success: function(response) {
+                    alert('Data berhasil dipilih dan disimpan');
+                    location.reload();
+                },
+                error: function(xhr, status, error) {
+                    alert('Data gagal dipilih, terjadi kesalahan dalam melakukan checkbox data: ' + error);
+                    console.error('Error: ', error);
+                }
+            });
+        } else {
+            alert('Silahkan pilih satu item');
+        }
+    });
+
+    // Fetch selected data
+    jQuery.ajax({
+        url: 'http://127.0.0.1:8000/api/kategori-layanan/get-selected-data',
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + token
+        },
+        success: function(response) {
+            console.log('Response: ', response);
+            if (response.data && response.data.length > 0) {
+                $('#kategori-list').empty();
+                $('#list').empty();
+
+                Object.keys(response.data).forEach(function(tipeKategoriId, index) {
+                    var kategoriList = response.data[tipeKategoriid];
+
+                    // if (kategori.tipe_kategori && kategori.tipe_kategori_id === kategori.tipe_kategori.id) {
+                    if (kategoriList.length > 0) 
+                    {
+                        var kategori = kategoriList[0];
+
+                        if (kategori.tipe_kategori && kategori.tipe_kategori_id === kategori.tipe_kategori.id)
+                        {
+
+                            // Menambahkan kategori ke dalam tab navigasi
+                            $('#kategori-list').append(`
+                                <li class="nav-item col-3">
+                                    <a class="nav-link ${index === 0 ? 'active show' : ''}" data-bs-toggle="tab" data-bs-target="#features-tab-${kategori.tipe_kategori_id}">
+                                        <i class="${kategori.tipe_kategori.code_icon}"></i>
+                                        <h4 class="d-none d-lg-block">${kategori.tipe_kategori.nama_tipe_kategori}</h4>
+                                    </a>
+                                </li>
+                            `);
+
+                            // Menambahkan konten kategori ke dalam tab content
+                            $('.tab-content').append(`
+                                <div class="tab-pane fade ${index === 0 ? 'active show' : ''}" id="features-tab-${kategori.tipe_kategori_id}">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h3>${kategori.tipe_kategori.nama_tipe_kategori}</h3>
+                                            <p class="fst-italic">${kategori.deskripsi}</p>
+                                            <ul id="features-list">
+                                                <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
+                                                <li><i class="bi bi-check2-all"></i><span>All Soft File</span></li>
+                                                <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
+                                            </ul>
+                                            <ul>
+                                                <li><span>${kategori.action_invitation}</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <img src="http://127.0.0.1:8000/storage/${kategori.images}" alt="${kategori.tipe_kategori.nama_tipe_kategori}" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+                        }
+                    }
+                });
+            } else {
+                console.error('No data found');
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error: ', error);
+        }
+    });
+});
+</script>
+@endpush --}}
+
+@push('get-kategori-layanan')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    function getCookie(name) {
+        var cookieName = name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var cookieArray = decodedCookie.split(';');
+
+        for (var i = 0; i < cookieArray.length; i++) {
+            var cookie = cookieArray[i];
+            while (cookie.charAt(0) === ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(cookieName) === 0) {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+        return "";
+    }
+
+    var token = getCookie('token');
+
+    // Function to get selected checkbox IDs
+    function getSelectedCheckboxIds() {
+        var selectedIds = [];
+        $('.row-checkbox:checked').each(function() {
+            selectedIds.push(parseInt($(this).val())); // Pastikan ID dikonversi menjadi integer
+        });
+        return selectedIds;
+    }
+
+    // Event listener for the select button
+    $('#selectProduct').on('click', function() {
+        var selectedCheckboxIds = getSelectedCheckboxIds();
+        if (selectedCheckboxIds.length > 0) {
+            $.ajax({
+                url: 'http://127.0.0.1:8000/api/kategori-layanan/update-selection',
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                    'Content-Type': 'application/json',
+                },
+                data: JSON.stringify({
+                    ids: selectedCheckboxIds
+                }),
+                success: function(response) {
+                    alert('Data berhasil dipilih dan disimpan');
+                    location.reload();
+                },
+                error: function(xhr, status, error) {
+                    alert('Data gagal dipilih, terjadi kesalahan dalam melakukan checkbox data: ' + error);
+                    console.error('Error: ', error);
+                }
+            });
+        } else {
+            alert('Silahkan pilih satu item');
+        }
+    });
+
+    // Fetch selected data
+    jQuery.ajax({
+        url: 'http://127.0.0.1:8000/api/kategori-layanan/get-selected-data',
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + token
+        },
+        success: function(response) {
+            console.log('Response:', response); // Tambahkan log ini
+            if (response.data && Object.keys(response.data).length > 0) {
+                $('#kategori-list').empty();
+                $('#list').empty();
+
+                Object.keys(response.data).forEach(function(tipeKategoriId, index) {
+                    var kategoriList = response.data[tipeKategoriId];
+                    
+                    if (kategoriList.length > 0) {
+                        var kategori = kategoriList[0];
+
+                        console.log('Kategori:', kategori); // Tambahkan log ini
+
+                        if (kategori.tipe_kategori && kategori.tipe_kategori_id === kategori.tipe_kategori.id) {
+                            // Menambahkan kategori ke dalam tab navigasi
+                            $('#kategori-list').append(`
+                                <li class="nav-item col-3">
+                                    <a class="nav-link ${index === 0 ? 'active show' : ''}" data-bs-toggle="tab" data-bs-target="#features-tab-${kategori.tipe_kategori_id}">
+                                        <i class="${kategori.tipe_kategori.code_icon}"></i>
+                                        <h4 class="d-none d-lg-block">${kategori.tipe_kategori.nama_tipe_kategori}</h4>
+                                    </a>
+                                </li>
+                            `);
+
+                            // Menambahkan konten kategori ke dalam tab content
+                            $('.tab-content').append(`
+                                <div class="tab-pane fade ${index === 0 ? 'active show' : ''}" id="features-tab-${kategori.tipe_kategori_id}">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h3>${kategori.tipe_kategori.nama_tipe_kategori}</h3>
+                                            <p class="fst-italic">${kategori.deskripsi}</p>
+                                            <ul id="features-list">
+                                                <li><i class="bi bi-check2-all"></i><span>Limited Editing</span></li>
+                                                <li><i class="bi bi-check2-all"></i><span>All Soft File</span></li>
+                                                <li><i class="bi bi-check2-all"></i><span>Direct Pose</span></li>
+                                            </ul>
+                                            <ul>
+                                                <li><span>${kategori.action_invitation}</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <img src="http://127.0.0.1:8000/storage/${kategori.images}" alt="${kategori.tipe_kategori.nama_tipe_kategori}" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+                        }
+                    }
+                });
+            } else {
+                console.error('No data found');
             }
         },
         error: function(xhr, status, error) {
@@ -1064,11 +1404,11 @@ jQuery(document).ready(function() {
                     $('#kategori-list').append(navItem);
 
                     // 2. Buat elemen untuk <ul id="list"> (span)
-                        const listItem = `
-                        <li>
-                            <i class="bi bi-check2-circle"></i>
-                            <span>${kategori.nama_tipe_kategori}</span>
-                        </li>
+                    const listItem = `
+                    <li>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>${kategori.nama_tipe_kategori}</span>
+                    </li>
                     `;
                     $('#list').append(listItem); // Tambahkan ke <ul id="list">
                 });
@@ -1079,4 +1419,63 @@ jQuery(document).ready(function() {
         });
 });
 </script>    
+@endpush
+
+@push('get-brand-messagings')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // get cookie
+        function getCookie(name)
+        {
+            var cookieName = name + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++)
+            {
+                var cookie = cookieArray[i];
+                
+                while (cookie.charAt(0) === ' ')
+                {
+                    cookie = cookie.substring(1);   
+                }
+
+                if (cookie.indexOf(cookieName) === 0)
+                {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+        }
+
+        var token = getCookie('token');
+        console.log('Token Get Brand: ', token);
+
+        jQuery.ajax({
+            url: 'http://127.0.0.1:8000/api/brand-messagings/get-selected-data',
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token
+            },
+            success: function(response) {
+                if (response) 
+                {
+                    $('#title').text(response.title);
+                    $('#content').text(response.content);
+                    $('#content_footer').text(response.content_footer);
+                }
+                else
+                {
+                    alert('Data tidak ada');
+                    console.log('Data tidak ada');
+                }
+            },
+            error: function(xhr, status, error) {
+                alert('Terjadi kesalahaan pada saat melakukan post data');
+                console.error('Error: ', error);
+            }
+        });
+        
+    });
+</script>
 @endpush

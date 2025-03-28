@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Login Admin</title>
+        <title>Ambara Journey Login Admin</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link href="assets/img/ambara.png" rel="icon"> <!-- icon link -->
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
         <link rel="stylesheet" href="assets/css/login-css/style.css">
     </head>
     <body>

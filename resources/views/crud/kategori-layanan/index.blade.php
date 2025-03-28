@@ -169,8 +169,8 @@
                 <input type="text" id="nama-kategori" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-nama-kategori" name="nama_kategori" placeholder="Masukkan Nama Kategori Layanan Perusahaan" required>
             </div> --}}
             <div>
-                <label for="nama-kategori" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Kategori</label>
-                <select id="nama-kategori" class="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-nama-kategori" name="nama_kategori_id" required>
+                <label for="nama-kategori-id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Kategori</label>
+                <select id="nama-kategori-id" class="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 update-nama-kategori" name="nama_kategori_id" required>
                     <option selected disabled>Pilih Nama Kategori</option>
                 </select>
             </div>
@@ -311,11 +311,11 @@
             </div>
             {{-- <div>
                 <label for="nama-kategori" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Kategori Layanan</label>
-                <input type="text" id="nama-kategori" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama-kategori" name="nama_kategori" placeholder="Masukkan Nama Kategori Layanan Perusahaan" required>
+                <input type="text" id="nama-kategori" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama-kategori-id" name="nama_kategori" placeholder="Masukkan Nama Kategori Layanan Perusahaan" required>
             </div> --}}
             <div>
-                <label for="nama-kategori" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Kategori</label>
-                <select id="nama-kategori" class="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama-kategori" name="nama_perusahaan_id" required>
+                <label for="nama-kategori-id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Kategori</label>
+                <select id="nama-kategori-id" class="form-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 form-nama-kategori-id" name="nama_kategori_id" required>
                     <option selected disabled>Pilih Nama Kategori</option>
                 </select>
             </div>
@@ -330,15 +330,6 @@
             <div>
                 <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="upload_images">Upload Images</label>
                 <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 form-images" aria-describedby="user_avatar_help" id="images" name="images" type="file" required>
-            </div>
-            <div class="bottom-0 left-0 flex justify-center w-full pb-4 space-x-4 md:px-4 md:absolute">
-                <button type="button" class="text-white w-full justify-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn-create">
-                    Tambah Data
-                </button>
-                <button type="button" data-drawer-dismiss="drawer-create-product-default" aria-controls="drawer-create-product-default" class="inline-flex w-full justify-center text-gray-500 items-center bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">
-                    <svg aria-hidden="true" class="w-5 h-5 -ml-1 sm:mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    Batal
-                </button>
             </div>
         </div>
         <div class="flex justify-center w-full pt-4 space-x-4">
@@ -440,7 +431,7 @@
                 // iterasi melalui data dan membuat objek untuk setiap entri
                 jQuery.each(data, function(index, item) {
                     for (let i = 0; i < item.length; i++) {
-                        selectNamaPerusahaan.append('<option value="' + item[i].id + '">' + item[i].name + '</option>');
+                        selectNamaPerusahaan.append('<option value="' + item[i].id + '">' + item[i].nama_perusahaan + '</option>');
                     }
                 });
             }).catch(error => {
@@ -449,7 +440,25 @@
             // END: Panggil data-support company_information
 
             // BEGIN: Panggil data-support kategori-layanan
-            
+            var url = 'http://127.0.0.1:8000/api/kategori-layanan/data-support/informasi-perusahaan/nama-kategori-id';
+            fetch (url, {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token,
+                }
+            }).then(response => response.json()).then(data => {
+                var selectNamaKategori = jQuery('.form-nama-kategori-id');
+
+                // iterasi mealui data dan membuat objek untuk setiap entri
+                jQuery.each(data, function(index, item) {
+                    for (let i = 0; i < item.length; i++) 
+                    {
+                        selectNamaKategori.append('<option value="' + item[i].id + '">' + item[i].nama_tipe_kategori + '</option>');   
+                    }
+                });
+            }).catch(error => {
+                console.error('Error: ', error);
+            });
             // END: Panggil data-support kategori-layanan
             
             // BEGIN: Add-Data
@@ -460,14 +469,14 @@
 
                 // get form data
                 var nama_perusahaan_id = jQuery('.form-nama-perusahaan-id').val();
-                var nama_kategori = jQuery('.form-nama-kategori').val();
+                var nama_kategori_id = jQuery('.form-nama-kategori-id').val();
                 var deskripsi = jQuery('.form-deskripsi').val();
                 var action_invitation = jQuery('.form-action-invitation').val();
                 var images = jQuery('.form-images')[0].files[0];
 
                 var formData = new FormData();
                 formData.append('nama_perusahaan_id', nama_perusahaan_id);
-                formData.append('nama_kategori', nama_kategori);
+                formData.append('nama_kategori_id', nama_kategori_id);
                 formData.append('deskripsi', deskripsi);
                 formData.append('action_invitation', action_invitation);
                 formData.append('images', images);
@@ -507,9 +516,9 @@
                             location.reload();
                         }, 3000);
                     },
-                    eror: function(xhr, status, error) {
+                    error: function(xhr, status, error) {
                         // show the modal
-                        jQuery('.add-data-pesan-gagal').text(response.message);
+                        jQuery('.add-data-pesan-gagal').text(response.error);
                         Toastify({
                             node: $('#error-add-data-notification-content')
                                 .clone()
@@ -601,7 +610,8 @@
         {
             var selectedIds = [];
             $('.row-checkbox:checked').each(function() {
-                selectedIds.push($(this).val());
+                // selectedIds.push($(this).val());
+                selectedIds.push(parseInt($(this).val())); // memastikan ID dikonversi menjadi Integer
             });
             return selectedIds;
             console.log(selectedIds);
@@ -624,7 +634,10 @@
                         'Content-Type': 'application/json',
                     },
                     data: JSON.stringify({
-                        id: selectedCheckboxIds[0] // choose 1
+                        // id: selectedCheckboxIds[0] // choose 1
+                        // id: selectedId,
+                        // tipe_kategori_id: tipeKategoriId
+                        ids: selectedCheckboxIds
                     }),
                     success: function(response) {
                         alert('Data berhasil dipilih dan disimpan');
@@ -667,7 +680,7 @@
                 },
                 { data: 'id', className: 'text-center' },
                 { data: 'nama_perusahaan_id', className: 'text-center' },
-                { data: 'nama_kategori', className: 'text-center' },
+                { data: 'nama_kategori_id', className: 'text-center' },
                 { data: 'deskripsi', className: 'text-center' },
                 { data: 'action_invitation', className: 'text-center' },
                 // { data: 'images', className: 'text-center' },
@@ -685,9 +698,9 @@
                     className: 'text-center',
                     render: function(data, type, row) {
                         // create action button
-                        var editBtn = '<button type="button" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + data.id + '" data-nama-perusahaan-id="' + data.nama_perusahaan_id + '" data-nama-kategori="' + data.nama_kategori + '" data-deskripsi="' + data.deskripsi + '" data-action-invitation="' + data.action_invitation + '" data-images="' + data.images + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
-                        // var editBtn = '<button type="button" id="updateProductButton" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + data.no + '" data-nama-perusahaan-id="' + data.nama_perusahaan_id + '" data-nama-kategori="' + data.nama_kategori + '" data-deskripsi="' + data.deskripsi + '" data-action-invitation="' + data.action_invitation + '" data-images="' + data.images + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
-                        // var editBtn = '<button type="button" id="updateProductButton" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + row.no + '" data-nama-perusahaan-id="' + row.nama_perusahaan_id + '" data-nama-kategori="' + row.nama_kategori + '" data-deskripsi="' + row.deskripsi + '" data-action-invitation="' + row.action_invitation + '" data-images="' + row.images + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
+                        var editBtn = '<button type="button" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + data.id + '" data-nama-perusahaan-id="' + data.nama_perusahaan_id + '" data-nama-kategori-id="' + data.nama_kategori_id + '" data-deskripsi="' + data.deskripsi + '" data-action-invitation="' + data.action_invitation + '" data-images="' + data.images + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
+                        // var editBtn = '<button type="button" id="updateProductButton" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + data.no + '" data-nama-perusahaan-id="' + data.nama_perusahaan_id + '" data-nama-kategori-id="' + data.nama_kategori + '" data-deskripsi="' + data.deskripsi + '" data-action-invitation="' + data.action_invitation + '" data-images="' + data.images + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
+                        // var editBtn = '<button type="button" id="updateProductButton" data-drawer-target="drawer-update-product-default" data-drawer-show="drawer-update-product-default" aria-controls="drawer-update-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 update-btn" data-id="' + row.no + '" data-nama-perusahaan-id="' + row.nama_perusahaan_id + '" data-nama-kategori-id="' + row.nama_kategori + '" data-deskripsi="' + row.deskripsi + '" data-action-invitation="' + row.action_invitation + '" data-images="' + row.images + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>Update</button>';
                         var deleteBtn = '<button type="button" id="deleteProductButton" data-drawer-target="drawer-delete-product-default" data-drawer-show="drawer-delete-product-default" aria-controls="drawer-delete-product-default" data-drawer-placement="right" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900 delete-btn" data-id="' + data.id + '"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>Delete</button>';
 
                         // combine the buttons
@@ -702,6 +715,7 @@
             paging: true,
             pageLength: 20, // jumlah item per halaman
             dom: 'lrtip', // default pagination
+            
             drawCallback: function(settings) {
                 var info = table.page.info();
 
@@ -759,106 +773,14 @@
         }
 
         var token = getCookie('token');
-        // console.log(token);
-
-        // Ambil data perusahaan dari API dan isi elemen <select>
-        // var url = 'http://127.0.0.1:8000/api/kategori-layanan/data-support/informasi-perusahaan';
-        // fetch(url, {
-        //     method: 'GET',
-        //     headers: {
-        //         'Authorization': 'Bearer ' + token,
-        //     }
-        // }).then(response => response.json()).then(data => {
-        //     jQuery('#data-table').on('click', '.update-btn', function() {
-        //         var id = jQuery(this).attr('data-id');
-        //         var nama_perusahaan_id = jQuery(this).attr('data-nama-perusahaan-id');
-        //         console.log('nama perusahaan: ', nama_perusahaan_id)
-        //         var nama_kategori = jQuery(this).attr('data-nama-kategori');
-        //         var deskripsi = jQuery(this).attr('data-deskripsi');
-        //         var action_invitation = jQuery(this).attr('data-action-invitation');
-        //         var images = jQuery(this).attr('data-images');
-
-        //         // isi form update data dengan data yg sudah ada
-        //         jQuery('.update-id').val(id);
-        //         jQuery('.update-nama-perusahaan-id').val(nama_perusahaan_id);
-        //         jQuery('.update-nama-kategori').val(nama_kategori);
-        //         jQuery('.update-deskripsi').val(deskripsi);
-        //         jQuery('.update-action-invitation').val(action_invitation);
-        //         // jQuery('.update-images').val(images);
-        //         // jQuery('.update-images').attr('src', 'http://127.0.0.1:8000:storage/' + images);
-
-        //         // tampilkan gambar jika ada
-        //         if (images)
-        //         {
-        //             jQuery('.update-images').attr('src', 'http://127.0.0.1:8000/storage/${images}');
-        //         }
-        //         else
-        //         {
-        //             jQuery('.update-images').attr('src', '');
-        //         }
-
-        //         var selectElement = jQuery('.update-nama-perusahaan-id');
-        //         selectElement.empty(); // kosongkan elent <select> sebelum menambahkan opsi baru
-        //         selectElement.append('<option selected disabled>Pilih Nama Perusahaan</option>');
-                
-        //         // iterasi melalui data dan membuat objek untuk setiap entri -> letak kesalahan
-        //         // jQuery.each(data, function(index, item) {
-        //         //     for (let i = 0; i < item.length; i++) {
-        //         //         if (item[i].id != nama_perusahaan_id)
-        //         //         {
-        //         //             selectElement.append('<option value="' + item[i].id + '">' + item[i].name + '</option>');
-        //         //         }
-        //         //     }
-        //         // });
-
-        //         selectElement.append('<option pvalue+"' + nama_perusahaan_id + '" selected>' + nama_perusahaan_id + '</option>');
-
-        //         // show drawer(id) atau form update
-        //         $('#drawer-update-product-default').removeClass('translate-x-full');
-        //     });
-        //     var selectUpdateNama = jQuery('.update-nama-perusahaan-id');
-
-        // }).catch(error => {
-        //     console.error('Error: ', error);
-        // });
-
-
-
-        // jQuery('#data-table').on('click', '#updateProductButton', function() {
-        //     var id = $(this).data('id');
-        //     var nama_perusahaan_id = $(this).data('nama-perusahaan-id');
-        //     console.log('nama perusahaan: ', nama_perusahaan_id); // Debug statement
-        //     var nama_kategori = $(this).data('nama-kategori');
-        //     console.log('nama kategori: ', nama_kategori); // Debug statement
-        //     var deskripsi = $(this).data('deskripsi');
-        //     var action_invitation = $(this).data('action-invitation');
-        //     var images = $(this).data('images');
-
-        //     // Isi form update data dengan data yang sudah ada
-        //     $('.update-id').val(id);
-        //     $('.update-nama-perusahaan-id').val(nama_perusahaan_id).trigger('change');
-        //     $('.update-nama-kategori').val(nama_kategori);
-        //     $('.update-deskripsi').val(deskripsi);
-        //     $('.update-action-invitation').val(action_invitation);
-        //     $('.update-images').attr('src', 'http://127.0.0.1:8000/storage/' + images);
-
         
-            // tambah opsi ke element <select>
-            // var selectElement = jQuery('.update-nama-perusahaan-id');
-            // selectElement.empty(); // kosongkan elent <select> sebelum menambahkan opsi baru
-            // selectElement.append('<option selected disabled>Pilih Nama Perusahaan</option>');
-            // selectElement.append('<option value+"' + nama_perusahaan_id + '" selected>' + nama_perusahaan_id + '</option>');
-
-        //     // Tampilkan drawer(id) atau form update
-        //     $('#drawer-update-product-default').removeClass('translate-x-full');
-        // });
-
         // Deklarasikan variabel global
         var companyData = [];
+        var categoryData = [];
 
-        // Ambil data perusahaan dari API
-        var url = 'http://127.0.0.1:8000/api/kategori-layanan/data-support/informasi-perusahaan';
-        fetch(url, {
+        // Ambil data perusahaan dari API untuk dropdown nama_perusahaan
+        var urlCompany = 'http://127.0.0.1:8000/api/kategori-layanan/data-support/informasi-perusahaan';
+        fetch(urlCompany, {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + token,
@@ -873,14 +795,14 @@
             jQuery('#data-table').on('click', '.update-btn', function() {
                 var id = jQuery(this).attr('data-id');
                 var nama_perusahaan = jQuery(this).attr('data-nama-perusahaan-id'); // Nama perusahaan
-                var nama_kategori = jQuery(this).attr('data-nama-kategori');
+                var nama_kategori = jQuery(this).attr('data-nama-kategori-id');
                 var deskripsi = jQuery(this).attr('data-deskripsi');
                 var action_invitation = jQuery(this).attr('data-action-invitation');
                 var images = jQuery(this).attr('data-images');
 
+                // console.log(nama_perusahaan);
                 // Isi form dengan data yang ada
                 jQuery('.update-id').val(id);
-                jQuery('.update-nama-kategori').val(nama_kategori);
                 jQuery('.update-deskripsi').val(deskripsi);
                 jQuery('.update-action-invitation').val(action_invitation);
 
@@ -891,25 +813,91 @@
                     jQuery('.update-images').attr('src', '');
                 }
 
-                var selectElement = jQuery('.update-nama-perusahaan-id');
-                selectElement.empty();
-                selectElement.append('<option disabled>Pilih Nama Perusahaan</option>');
+                var selectElementCompany = jQuery('.update-nama-perusahaan-id');
+                selectElementCompany.empty();
+                selectElementCompany.append('<option disabled>Pilih Nama Perusahaan</option>');
+
 
                 // Tambahkan perusahaan yang terpilih terlebih dahulu
                 var perusahaanTerpilih = companyData.find(function(company) {
-                    return company.name.trim().toLowerCase() === nama_perusahaan.trim().toLowerCase();
+                    return company.nama_perusahaan.trim().toLowerCase() === nama_perusahaan.trim().toLowerCase();
                 });
-
+                
                 if (perusahaanTerpilih) {
-                    selectElement.append('<option value="' + perusahaanTerpilih.id + '" selected>' + perusahaanTerpilih.name + '</option>');
+                    selectElementCompany.append('<option value="' + perusahaanTerpilih.id + '" selected>' + perusahaanTerpilih.nama_perusahaan + '</option>');
                 } else {
                     console.error('Perusahaan dengan nama tersebut tidak ditemukan:', nama_perusahaan);
                 }
 
                 // Tambahkan perusahaan lainnya ke dropdown
                 companyData.forEach(function(company) {
-                    if (company.name.trim().toLowerCase() !== nama_perusahaan.trim().toLowerCase()) {
-                        selectElement.append('<option value="' + company.id + '">' + company.name + '</option>');
+                    if (company.nama_perusahaan.trim().toLowerCase() !== nama_perusahaan.trim().toLowerCase()) {
+                        selectElementCompany.append('<option value="' + company.id + '">' + company.nama_perusahaan + '</option>');
+                    }
+                });
+
+                // Tampilkan form update
+                $('#drawer-update-product-default').removeClass('translate-x-full');
+            });
+
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
+        // Ambil data kategori dari API untuk dropdown nama_kategori
+        var urlCategory = 'http://127.0.0.1:8000/api/kategori-layanan/data-support/informasi-perusahaan/nama-kategori-id';
+        fetch(urlCategory, {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + token,
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Asumsikan data.data adalah array kategori
+            categoryData = data.data;
+
+            // Pasang event listener setelah data tersedia
+            jQuery('#data-table').on('click', '.update-btn', function() {
+                var id = jQuery(this).attr('data-id');
+                var nama_perusahaan = jQuery(this).attr('data-nama-perusahaan-id'); // Nama perusahaan
+                var nama_kategori = jQuery(this).attr('data-nama-kategori-id');
+                var deskripsi = jQuery(this).attr('data-deskripsi');
+                var action_invitation = jQuery(this).attr('data-action-invitation');
+                var images = jQuery(this).attr('data-images');
+
+                // Isi form dengan data yang ada
+                jQuery('.update-id').val(id);
+                jQuery('.update-deskripsi').val(deskripsi);
+                jQuery('.update-action-invitation').val(action_invitation);
+
+                // Tampilkan gambar jika ada
+                if (images) {
+                    jQuery('.update-images').attr('src', 'http://127.0.0.1:8000/public/storage/images/kategori_layanan' + images);
+                } else {
+                    jQuery('.update-images').attr('src', '');
+                }
+
+                var selectElementCategory = jQuery('.update-nama-kategori');
+                selectElementCategory.empty();
+                selectElementCategory.append('<option disabled>Pilih Nama Kategori</option>');
+
+                // Tambahkan kategori yang terpilih terlebih dahulu
+                var kategoriTerpilih = categoryData.find(function(category) {
+                    return category.nama_tipe_kategori.trim().toLowerCase() === nama_kategori.trim().toLowerCase();
+                });
+
+                if (kategoriTerpilih) {
+                    selectElementCategory.append('<option value="' + kategoriTerpilih.id + '" selected>' + kategoriTerpilih.nama_tipe_kategori + '</option>');
+                } else {
+                    console.error('Kategori dengan nama tersebut tidak ditemukan:', nama_kategori);
+                }
+
+                // Tambahkan kategori lainnya ke dropdown
+                categoryData.forEach(function(category) {
+                    if (category.nama_tipe_kategori.trim().toLowerCase() !== nama_kategori.trim().toLowerCase()) {
+                        selectElementCategory.append('<option value="' + category.id + '">' + category.nama_tipe_kategori + '</option>');
                     }
                 });
 
@@ -926,18 +914,16 @@
         jQuery('.btn-update').click(function() {
             var id = jQuery('.update-id').val();
             var nama_perusahaan_id = jQuery('.update-nama-perusahaan-id').val();
-            var nama_kategori = jQuery('.update-nama-kategori').val();
+            var nama_kategori_id = jQuery('.update-nama-kategori').val();
             var deskripsi = jQuery('.update-deskripsi').val();
             var action_invitation = jQuery('.update-action-invitation').val();
-            // var images = jQuery('.update-images').attr('src').replace('http://127.0.0.1:8000/storage/', '');
             var imagesFile = jQuery('.update-images')[0].files[0]; // mengambil file gambar baru
 
             var formData = new FormData();
             formData.append('perusahaan_id', nama_perusahaan_id);
-            formData.append('nama_kategori', nama_kategori);
+            formData.append('tipe_kategori_id', nama_kategori_id);
             formData.append('deskripsi', deskripsi);
             formData.append('action_invitation', action_invitation);
-            // formData.append('images', images);
             if (imagesFile)
             {
                 formData.append('images', imagesFile); // menambahkan file gambar jika ada
@@ -984,7 +970,7 @@
                     }).showToast();
 
                     setTimeout(function() {
-                        // location.reload();
+                        location.reload();
                     }, 3000);
                 },
                 error: function(xhr, status, error) {
@@ -1008,8 +994,8 @@
                     }).showToast();
 
                     setTimeout(function() {
-                        // location.reload();
-                    }, 5000)
+                        location.reload();
+                    }, 5000);
                 }
             });
         });
@@ -1017,12 +1003,12 @@
         // handle 'batal' button action
         jQuery(document).on('click', '[data-drawer-dismiss="drawer-update-product-default"]', function() {
             // reset all fields in the form
-            jQuery('.update-id').val();
-            jQuery('.update-nama-perusahaan-id').val();
-            jQuery('.update-nama-kategori').val();
-            jQuery('.update-deskripsi').val();
-            jQuery('.update-action-invitation').val();
-            jQuery('.update-images').val();
+            jQuery('.update-id').val('');
+            jQuery('.update-nama-perusahaan-id').val('');
+            jQuery('.update-nama-kategori').val('');
+            jQuery('.update-deskripsi').val('');
+            jQuery('.update-action-invitation').val('');
+            jQuery('.update-images').val('');
 
             // hide drawer(id)
             $('#drawer-update-product-default').addClass('translate-x-full');

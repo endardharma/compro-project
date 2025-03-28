@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\AboutCompany;
 use App\Models\InformasiPerusahaan;
 use App\Models\KategoriLayanan;
+use App\Models\SelectedKategoriLayanan;
+use App\Models\TipeKategori;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -21,81 +23,41 @@ class KategoriLayananController extends Controller
     {
         $namaPerusahaan = InformasiPerusahaan::all();
         $data = array();
-
+        
         foreach ($namaPerusahaan as $c)
         {
             $item['id'] = $c->id;
-            $item['name'] = $c->nama_perusahaan;
+            $item['nama_perusahaan'] = $c->nama_perusahaan;
             $data[] = $item;
         }
-
+        
         return response()->json([
             'data' => $data,
         ], 200);
     }
 
-    // public function addData(Request $request)
-    // {
-    //     // validation
-    //     $validator = Validator::make($request->all(), [
-    //         'nama_perusahaan_id' => 'required',
-    //         'nama_kategori' => 'required',
-    //         'deskripsi' => 'required',
-    //         'action_invitation' => 'required',
-    //         'images' => 'required|images|mimes:jpeg,png,jpg,gif|max:2048',
-    //     ]);
-
-    //     // simpan gambar ke storage dan dapatkan pathnya
-    //     // $imagesPath = $request->file('images')->store('images', 'public');
-
-    //     // images check
-    //     if ($request->hasFIle('images') && $request->file('images')->isValid()) 
-    //     {
-    //         // get extension file
-    //         $extension = $request->file('images')->getClientOriginalName();
-
-    //         // get unique name file and timestamp or UUID
-    //         $newFileName = pathinfo($request->file('images')->getClientOriginalName(), PATHINFO_FILENAME) . '_' . time() . '.' . $extension;
-
-    //         // save images to starage and get the path
-    //         $imagesPath = $request->file('images')->storeAs('images', $newFileName, 'public');
-            
-    //         // save data to database
-    //         $tambahKategori = new KategoriLayanan();
-    //         $tambahKategori->perusahaan_id = $request->nama_perusahaan_id;
-    //         $tambahKategori->nama_kategori = $request->nama_kategori;
-    //         $tambahKategori->deskripsi = $request->deskripsi;
-    //         $tambahKategori->action_invitation = $request->action_invitation;
-    //         $tambahKategori->images = $imagesPath;
-    //         $tambahKategori->save();
-    
-    //         return response()->json([
-    //             'success' => true,
-    //             'message' => 'Data tentang perusahaan berhasil di tambahkan ke dalam database',
-    //         ], 201);
-
-    //     }
-    //     else
-    //     {
-    //         return response()->json([
-    //             'success' => false,
-    //             'message' => 'File gambar tidak valid',
-    //         ], 400);
-    //     }
+    public function supportNamaKategoriId()
+    {
+        $namaKategori = TipeKategori::all();
+        $data = array();
         
-    //     // // response error validation
-    //     // if ($validator->fails()) {
-    //     //     return response()->json($validator->errors(), 400);
-    //     // }
+        foreach ($namaKategori as $n)
+        {
+            $item['id'] = $n->id;
+            $item['nama_tipe_kategori'] = $n->nama_tipe_kategori;
+            $data[] = $item;
+        }
 
-        
-    // }
+        return response([
+            'data' => $data,
+        ], 200);
+    }
 
     public function addData(Request $request) 
     { 
         $validator = Validator::make($request->all(), [
             'nama_perusahaan_id' => 'required', 
-            'nama_kategori' => 'required', 
+            'nama_kategori_id' => 'required', 
             'deskripsi' => 'required', 
             'action_invitation' => 'required', 
             'images' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', 
@@ -113,9 +75,6 @@ class KategoriLayananController extends Controller
             $extension = $request->file('images')->getClientOriginalExtension(); 
 
             // membuat nama file
-            // $nama_perusahaan = $request->nama_perusahaan_id;
-            // $nama_kategori = $request->nama_kategori;
-            // $newFileName = 'kategori_layanan_' . str_replace(' ', '_', $nama_perusahaan) . '_' . str_replace(' ', '_', $nama_kategori) . '.' . $extension;
             $cekImage = $request->file('images');
             $imageName = $cekImage->getClientOriginalName();
             
@@ -125,7 +84,7 @@ class KategoriLayananController extends Controller
             // Simpan data ke basis data 
             $kategoriLayanan = new KategoriLayanan; 
             $kategoriLayanan->perusahaan_id = $request->nama_perusahaan_id; 
-            $kategoriLayanan->nama_kategori = $request->nama_kategori; 
+            $kategoriLayanan->tipe_kategori_id = $request->nama_kategori_id; 
             $kategoriLayanan->deskripsi = $request->deskripsi; 
             $kategoriLayanan->action_invitation = $request->action_invitation; 
             $kategoriLayanan->images = $path; 
@@ -148,7 +107,7 @@ class KategoriLayananController extends Controller
         $columns = [
             0 => 'id',
             1 => 'nama_perusahaan_id',
-            2 => 'nama_kategori',
+            2 => 'nama_kategori_id',
             3 => 'deskripsi', 
             4 => 'action_invitation',
             5 => 'images',
@@ -166,7 +125,7 @@ class KategoriLayananController extends Controller
         $kategori = KategoriLayanan::where(function ($q) use ($search) {
             if ($search != null)
             {
-                return $q->where('nama_perusahaan_id', 'LIKE', '%'.$search.'%')->orWhere('id', 'LIKE', '%'.$search.'%')->orWhere('nama_kategori', 'LIKE', '%'.$search.'%');
+                return $q->where('nama_perusahaan_id', 'LIKE', '%'.$search.'%')->orWhere('id', 'LIKE', '%'.$search.'%')->orWhere('nama_kategori_id', 'LIKE', '%'.$search.'%');
             }
         })
         ->orderby($orderColumn, $dir)
@@ -180,7 +139,8 @@ class KategoriLayananController extends Controller
             $item['id'] = $k->id;
             $item['perusahaa_id'] = $k->perusahaan_id;
             $item['nama_perusahaan_id'] = $k->informasiPerusahaan->nama_perusahaan ?? '';
-            $item['nama_kategori'] = $k->nama_kategori;
+            $item['tipe_kategori_id'] = $k->tipe_kategori_id;
+            $item['nama_kategori_id'] = $k->tipeKategori->nama_tipe_kategori ?? '';
             $item['deskripsi'] = $k->deskripsi;
             $item['action_invitation'] = $k->action_invitation;
             $item['images'] = $k->images;
@@ -202,7 +162,7 @@ class KategoriLayananController extends Controller
         if ($find)
         {
             $find->perusahaan_id != null ? $find->perusahaan_id = $request->perusahaan_id: true ;
-            $find->nama_kategori != null ? $find->nama_kategori = $request->nama_kategori: true ;
+            $find->tipe_kategori_id != null ? $find->tipe_kategori_id = $request->tipe_kategori_id: true ;
             $find->deskripsi != null ? $find->deskripsi = $request->deskripsi: true ;
             $find->action_invitation != null ? $find->action_invitation = $request->action_invitation: true ;
 
@@ -281,27 +241,115 @@ class KategoriLayananController extends Controller
         }
     }
 
+    // update get selection data for kategori layanan
+    // public function updateSelection(Request $request)
+    // {
+
+    //     $ids = $request->input('ids'); // mengambil array ID dari request
+
+    //     if (is_null($ids) || !is_array($ids)) 
+    //     {
+    //         return response()->json([
+    //             'success' => false,
+    //             'message' => 'Invalid data received'
+    //         ], 400);
+    //     }
+        
+    //     // hapus semua data yang ada di table selected_kategori_layanan
+    //     SelectedKategoriLayanan::truncate();
+
+    //     // tambahkan dat abaru ke table selected_kategori_layanan
+    //     foreach ($ids as $id)
+    //     {
+    //         $kategoriLayanan = kategoriLayanan::find($id);
+        
+    //         if ($kategoriLayanan)
+    //         {
+    //             SelectedKategoriLayanan::create([
+    //                 'kategori_layanan_id' => $kategoriLayanan->id,
+    //                 'perusahaan_id' => $kategoriLayanan->perusahaan_id,
+    //                 'tipe_kategori_id' =>$kategoriLayanan->tipe_kategori_id,
+    //             ]);
+    //         }
+    //     }
+
+    //     $updateData = SelectedKategoriLayanan::whereIn('kategori_layanan_id', $ids)->get();
+
+    //     return response()->json([
+    //         'success' => true,
+    //         'message' => 'Data landing-page bagian kategori-layanan berhasil di update'
+    //     ], 201);
+        
+    // }
+
     public function updateSelection(Request $request)
     {
-        $id = $request->input('id');
+        // mengambil array ID dari request
+        $ids = $request->input('ids');
 
-        // dd($id);
-        // set all is_selected to false
-        KategoriLayanan::query()->update(['is_selected' => false]);
+        if (is_null ($ids) || !is_array($ids))
+        {
+            return response()->json([
+                'success' => false,
+                'message' => 'Invalid data received'
+            ], 400);
+        }
 
-        // update selected kategori with is_selected = true
-        KategoriLayanan::where('id', $id)->update(['is_selected' => true]);
+        // hapus data yg ada berdasarkan tipe_kategori_id
+        $kategoriLayananList = KategoriLayanan::whereIn('id', $ids)->get();
+
+        foreach ($kategoriLayananList as $kategoriLayanan)
+        {
+            SelectedKategoriLayanan::where('tipe_kategori_id', $kategoriLayanan->tipe_kategori_id)->delete();
+        }
+
+        // tambahkan data baru ke tabel selected_kategori_layanan
+        foreach ($ids as $id)
+        {
+            $kategoriLayanan = KategoriLayanan::find($id);
+
+            if ($kategoriLayanan)
+            {
+                SelectedKategoriLayanan::create([
+                    'kategori_layanan_id' => $kategoriLayanan->id,
+                    'perusahaan_id' => $kategoriLayanan->perusahaan_id,
+                    'tipe_kategori_id' => $kategoriLayanan->tipe_kategori_id,
+                ]);
+            }
+        }
+
+        // data di perbarui
+        $updateData = SelectedKategoriLayanan::whereIn('kategori_layanan_id', $ids)->get();
 
         return response()->json([
             'success' => true,
-            'message' => 'Data landing-page bagian kategori-layanan erhasil di update '
+            'message' => 'Data landing-page bagian kategori-layanan berhasil di update'
         ], 201);
     }
 
+    // get selection data for tipe kategori
+    // public function getSelectedData(Request $request)
+    // {
+    //     $selectedData = KategoriLayanan::where('is_selected', true)->first();
+    //     $selectedData = KategoriLayanan::with('tipeKategori')
+    //     ->where('is_selected', true)
+    //     ->get()
+    //     ->filter(function ($kategori) {
+    //         return $kategori->tipe_kategori_id === $kategori->tipeKategori->id;
+    //     })
+    //     ->values();
+    // }
+    
     public function getSelectedData(Request $request)
     {
-        $selectedData = KategoriLayanan::where('is_selected', true)->first();
-        return response()->json($selectedData);
+        $selectedData = SelectedKategoriLayanan::with('kategoriLayanan.tipeKategori')
+            ->get()
+            ->groupBy('kategoriLayanan.tipe_kategori_id')
+            ->map(function ($group) {
+                return $group->pluck('kategoriLayanan');
+            });
+        
+
+        return response()->json(['data' => $selectedData], 200);
     }
-    
 }

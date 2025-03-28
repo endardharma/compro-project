@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Nama Perusahaan</title>
+    <title>Ambara Journey Company Profile</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -42,12 +42,15 @@
                 <nav id="navmenu" class="navmenu">
                     <ul>
                         <li><a href="#hero" class="active">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about-company">About</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
                         <li><a href="#portfolio">Portofolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#pricing">Pricing</a></li> <!-- ganti #blog dengan link url blog -->
+                        <li><a href="#faq">Faq</a></li> <!-- ganti #blog dengan link url blog -->
                         <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        {{-- <li><a href="#contact">Contact</a></li> --}}
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -955,8 +958,8 @@
 
         <footer id="footer" class="footer dark-background">
             <div class="container">
-                <h3 class="sitename">Ambara Journey</h3>
-                <p>Setiap momen berharga layak diabadikan, karena melalui lensa, cerita hidupmu menjadi abadi.</p>
+                <h3 class="sitename" id="footer_nama_perusahaan"></h3>
+                <p id="content_footer"></p>
                 <div class="social-links d-flex justify-content-center">
                     <a href="" class="bi bi-twitter-x"></a>
                     <a href="" class="bi bi-facebook"></a>
@@ -966,7 +969,7 @@
                 </div>
                 <div class="container">
                     <div class="copyright">
-                        <span>Copyrigt</span><strong class="px-1 sitename">Ambara Journey</strong><span>All Rights Reserved</span>
+                        <span>Copyrigt</span><strong class="px-1 sitename" id="footer_nama_perusahaan_copyright"></strong><span>All Rights Reserved</span>
                     </div>
                 </div>
             </div>
@@ -997,5 +1000,118 @@
         @stack('get-info-perusahaan')
         @stack('get-kategori-layanan')
         @stack('get-list-kategori')
+        @stack('get-brand-messagings')
+
+        <!-- BEGIN: Get Footer Info Perusahaan (Nama Perusahaan) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // get cookie
+                function getCookie(name) {
+                    var cookieName = name + '=';
+                    var decodedCookie = decodeURIComponent(document.cookie);
+                    var cookieArray = decodedCookie.split(';');
+
+                    for (var i = 0; i < cookieArray.length; i++) 
+                    {
+                        var cookie = cookieArray[i];
+
+                        while (cookie.charAt(0) === ' ')
+                        {
+                            cookie = cookie.substring(1);   
+                        }
+
+                        if (cookie.indexOf(cookieName) === 0 )
+                        {
+                            return cookie.substring(cookieName.length, cookie.length);
+                        }
+                    }
+                }
+
+                var token = getCookie('token');
+
+                // console.log('Token Footer Get Info Perusahaan: ', token);
+
+                jQuery.ajax({
+                    url: 'http://127.0.0.1:8000/api/informasi-perusahaan/get-selected-data',
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    },
+                    success: function(response) {
+                        if (response) {
+                            $('#footer_nama_perusahaan').text(response.nama_perusahaan);
+                            $('#footer_nama_perusahaan_copyright').text(response.nama_perusahaan);
+                        }
+                        else
+                        {
+                            alert('Data tidak ada');
+                            console.log('Data tidak ada');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error: ', error);
+                    }
+                });
+                
+            });
+        </script>
+        <!-- END: Get Footer Info Perusahaan (Nama Perusahaan) -->
+        
+        <!-- BEGIN: Get Footer Brand Messagings (Content Footer) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // get cookie
+                function getCookie(name) {
+                    var cookieName = name + '=';
+                    var decodedCookie = decodeURIComponent(document.cookie);
+                    var cookieArray = decodedCookie.split(';');
+
+                    for (var i = 0; i < cookieArray.length; i++) 
+                    {
+                        var cookie = cookieArray[i];
+
+                        while (cookie.charAt(0) === ' ')
+                        {
+                            cookie = cookie.substring(1);   
+                        }
+
+                        if (cookie.indexOf(cookieName) === 0 )
+                        {
+                            return cookie.substring(cookieName.length, cookie.length);
+                        }
+                    }
+                }
+
+                var token = getCookie('token');
+
+                // console.log('Token Footer Get Brand Messagings: ', token);
+
+                jQuery.ajax({
+                    url: 'http://127.0.0.1:8000/api/brand-messagings/get-selected-data',
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    },
+                    success: function(response) {
+                        if (response) {
+                            $('#content_foote').text(response.content_footer);
+                        }
+                        else
+                        {
+                            alert('Data tidak ada');
+                            console.log('Data tidak ada');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error: ', error);
+                    }
+                });
+                
+            });
+        </script>
+        <!-- END: Get Footer Brand Messagings (Content Footer) -->
+        
     </body>
 </html>
